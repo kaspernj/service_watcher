@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "service_watcher_interface_web"
   gem.homepage = "http://github.com/kaspernj/service_watcher_interface_web"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{A web-interface for the service_watcher project.}
+  gem.description = %Q{A web-interface using knjappserver to serve the graphical user-interface for service_watcher.}
   gem.email = "k@spernj.org"
   gem.authors = ["Kasper Johansen"]
   # dependencies defined in Gemfile
