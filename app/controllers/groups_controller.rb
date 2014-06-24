@@ -1,100 +1,43 @@
-class Service_watcher::Controllers::Group < Service_watcher::Controller
-  def add
-    group = _ob.add(:Group, {
-      :name => _get["name"]
-    })
-    
-    return {
-      :id => group.id,
-      :name => group.name
-    }
+class GroupsController < ApplicationController
+  before_filter :set_and_authorize
+  
+  def new
+    @group = Group.new
   end
   
-  def add_reporter
-    group = _ob.get(:Group, _get["group_id"])
-    reporter = _ob.get(:Reporter, _get["reporter_id"])
+  def create
+    @group = Group.new(group_params)
     
-    link = _ob.get_by(:Group_reporterlink, {
-      "group" => group,
-      "reporter" => reporter
-    })
-    raise _("That reporter is already member of that group.") if link
-    
-    link = _ob.add(:Group_reporterlink, {
-      :group_id => group.id,
-      :reporter_id => reporter.id
-    })
-    
-    return {
-      :group_reporterlink_id => link.id
-    }
-  end
-  
-  def list
-    ret = []
-    
-    _ob.list(:Group, _get["args"]) do |group|
-      ret << group.client_data
+    if @group.save
+      redirect_to group_path(@group)
+    else
+      render :new
     end
-    
-    return ret
   end
   
-  def get
-    group = _ob.get(:Group, _get["group_id"])
-    return group.client_data
+  def edit
   end
   
   def update
-    group = _ob.get(:Group, _get["group_id"])
-    group.update(
-      :name => _get["name"]
-    )
-    return group.client_data
-  end
-  
-  def delete
-    group = _ob.get(:Group, _get["group_id"])
-    _ob.delete(group)
-    return {}
-  end
-  
-  def services
-    group = _ob.get(:Group, _get["group_id"])
-    
-    ret = []
-    group.services(_get["args"]).each do |service|
-      ret << service.client_data
+    if @group.update_attributes(group_params)
+      redirect_to group_path(@group)
+    else
+      render :edit
     end
-    
-    return ret
   end
   
-  def reporters
-    group = _ob.get(:Group, _get["group_id"])
-    
-    ret = []
-    group.reporters.each do |link|
-      ret << link.reporter.client_data if link.reporter
+  def destroy
+    if @group.destroy
+      redirect_to dashboard_index_path
+    else
+      flash[:error] = @group.errors.full_messages.join(". ")
+      redirect_to group_path(@group)
     end
-    
-    return ret
   end
   
-  def add_reporter
-    link = _ob.add(:Group_reporterlink, {
-      :group_id => _get["group_id"],
-      :reporter_id => _get["reporter_id"]
-    })
-    return {}
-  end
+private
   
-  def remove_reporter
-    link = _ob.get_by(:Group_reporterlink, {
-      "group_id" => _get["group_id"],
-      "reporter_id" => _get["reporter_id"]
-    })
-    _ob.delete(link) if link
-    return {}
+  def group_params
+    params.require(:group).permit(:name)
   end
 end

@@ -1,0 +1,27 @@
+!!! 1.1
+%html
+  %body
+    - if header_title
+      %title= header_title
+    - else
+      %title ServiceWatcher
+    
+    = stylesheet_link_tag "application", media: "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+    
+    %center
+      %table.main_table{cellpadding: 0, cellspacing: 0}
+        %tr
+          %td.main_logo Service Watcher
+        %tr
+          %td.main_menu
+            - menus.each do |link|
+              = link
+        %tr
+          %td.main_content
+            %h1= header_title
+            
+            = yield
+        %tr
+          %td Bottom

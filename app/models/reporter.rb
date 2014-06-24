@@ -1,4 +1,7 @@
 class Reporter < ActiveRecord::Base
+  include PublicActivity::Model
+  tracked
+  
   has_many :options, :as => :resource, :dependent => :destroy
   has_many :group_reporters, :dependent => :destroy
   has_many :groups, :through => :group_reporters

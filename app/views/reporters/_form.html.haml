@@ -1,0 +1,6 @@
+= DesignBox.boxt _("Details"), 350
+= simple_form_for @reporter do |f|
+  = f.input :name
+  = f.input :plugin, :collection => Plugin.order(:name)
+  = f.submit _("Save")
+= DesignBox.boxb
