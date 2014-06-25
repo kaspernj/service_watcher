@@ -1,6 +1,6 @@
 class ServiceWatcherPlugin::Mysql
-	def self.paras
-		return [{
+  def self.paras
+    return [{
       "title" => _("Hostname"),
       "name" => "txthost"
     },{
@@ -19,12 +19,12 @@ class ServiceWatcherPlugin::Mysql
       "name" => "txtdb",
       "default" => "mysql"
     }]
-	end
-	
-	def self.check(paras)
+  end
+  
+  def self.check(paras)
     require "mysql2"
     
-		begin
+    begin
       args = {
         :host => paras["txthost"],
         :username => paras["txtuser"],
@@ -35,8 +35,8 @@ class ServiceWatcherPlugin::Mysql
       
       conn = Mysql2::Client.new(args)
       conn.close
-		rescue => e
-			raise "MySQL connection failed for #{paras["txtuser"]}@#{paras["txthost"]}:#{paras["txtdb"]}! - " + e.inspect
-		end
-	end
+    rescue => e
+      raise "MySQL connection failed for #{paras["txtuser"]}@#{paras["txthost"]}:#{paras["txtdb"]}! - " + e.inspect
+    end
+  end
 end

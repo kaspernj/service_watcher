@@ -1,32 +1,32 @@
 class ServiceWatcherPlugin::SshService
-	def self.paras
-		return [
-			{
-				"title" => _("Port"),
-				"name" => "txtport",
-				"default" => "22"
-			},{
-				"title" => _("Hostname"),
-				"name" => "txthost"
-			},{
-				"title" => _("Username"),
-				"name" => "txtuser"
-			},{
-				"type" => "password",
-				"title" => _("Password"),
-				"name" => "txtpasswd"
-			},{
+  def self.paras
+    return [
+      {
+        "title" => _("Port"),
+        "name" => "txtport",
+        "default" => "22"
+      },{
+        "title" => _("Hostname"),
+        "name" => "txthost"
+      },{
+        "title" => _("Username"),
+        "name" => "txtuser"
+      },{
+        "type" => "password",
+        "title" => _("Password"),
+        "name" => "txtpasswd"
+      },{
         "title" => _("Service name"),
         "name" => "txtservicename"
-			},{
+      },{
         "title" => _("Sudo password"),
         "name" => "txtsudopasswd",
         "type" => "password"
       }
-		]
-	end
-	
-	def self.check(paras)
+    ]
+  end
+  
+  def self.check(paras)
     sshrobot = Knj::SSHRobot.new(
       "host" => paras["txthost"],
       "port" => paras["txtport"],
@@ -54,5 +54,5 @@ class ServiceWatcherPlugin::SshService
     end
     
     sshrobot.close
-	end
+  end
 end

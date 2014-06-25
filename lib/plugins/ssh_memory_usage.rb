@@ -1,26 +1,26 @@
 class ServiceWatcherPlugin::SshMemoryUsage
-	def self.paras
-		return [{
-			"title" => _("Hostname"),
-			"name" => "txthost"
-		},{
-			"title" => _("Port"),
-			"name" => "txtport",
-			"default" => "22"
-		},{
-			"title" => _("Username"),
-			"name" => "txtuser"
-		},{
-			"type" => "password",
-			"title" => _("Password"),
-			"name" => "txtpasswd"
-		},{
-			"title" => _("Warning percent"),
-			"name" => "txtwarnperc"
-		}]
-	end
-	
-	def self.check(paras)
+  def self.paras
+    return [{
+      "title" => _("Hostname"),
+      "name" => "txthost"
+    },{
+      "title" => _("Port"),
+      "name" => "txtport",
+      "default" => "22"
+    },{
+      "title" => _("Username"),
+      "name" => "txtuser"
+    },{
+      "type" => "password",
+      "title" => _("Password"),
+      "name" => "txtpasswd"
+    },{
+      "title" => _("Warning percent"),
+      "name" => "txtwarnperc"
+    }]
+  end
+  
+  def self.check(paras)
     Knj.gem_require(:Tretry, "tretry")
     warn_perc = paras["txtwarnperc"].to_f
     
@@ -46,5 +46,5 @@ class ServiceWatcherPlugin::SshMemoryUsage
         raise "The process with PID '#{data["pid"]}' from '#{data["user"]}' had '#{data["ram_last"].to_f.round(2)}%' memory usage: '#{data["app"]}'."
       end
     end
-	end
+  end
 end
