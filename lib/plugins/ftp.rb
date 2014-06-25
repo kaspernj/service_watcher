@@ -1,4 +1,4 @@
-class Service_watcher::Plugin::Ftp < Service_watcher::Plugin
+class ServiceWatcherPlugin::Ftp
 	def self.paras
 		return [{
 			"title" => _("Port"),

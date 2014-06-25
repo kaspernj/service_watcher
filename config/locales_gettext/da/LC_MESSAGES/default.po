@@ -1,6 +1,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ServiceWatcher\n"
+"POT-Creation-Date: 2014-06-25 10:02+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Kasper Johansen <k@spernj.org>\n"
+"Language-Team: \n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -8,4 +12,2235 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: ../../../../\n"
 "X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
+
+#: lib/reporter_plugins/mailer.rb:4
+msgid "Email address"
+msgstr "Email adresse"
+
+#. Default value: %Y-%m-%d
+#: lib/gettext_simple_rails/date_translator_translations.rb:4
+msgid "date.formats.default"
+msgstr "%Y-%m-%d"
+
+#. Default value: %b %d
+#: lib/gettext_simple_rails/date_translator_translations.rb:6
+msgid "date.formats.short"
+msgstr "%b %d"
+
+#. Default value: %B %d, %Y
+#: lib/gettext_simple_rails/date_translator_translations.rb:8
+msgid "date.formats.long"
+msgstr "%B %d, %Y"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:9
+msgid "date.day_names.0"
+msgstr "Søndag"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:10
+msgid "date.day_names.1"
+msgstr "Mandag"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:11
+msgid "date.day_names.2"
+msgstr "Tirsdag"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:12
+msgid "date.day_names.3"
+msgstr "Onsdag"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:13
+msgid "date.day_names.4"
+msgstr "Torsdag"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:14
+msgid "date.day_names.5"
+msgstr "Fredag"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:15
+msgid "date.day_names.6"
+msgstr "Lørdag"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:16
+msgid "date.abbr_day_names.0"
+msgstr "Søndag"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:17
+msgid "date.abbr_day_names.1"
+msgstr "Mandag"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:18
+msgid "date.abbr_day_names.2"
+msgstr "Tirsdag"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:19
+msgid "date.abbr_day_names.3"
+msgstr "Onsdag"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:20
+msgid "date.abbr_day_names.4"
+msgstr "Torsdag"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:21
+msgid "date.abbr_day_names.5"
+msgstr "Fredag"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:22
+msgid "date.abbr_day_names.6"
+msgstr "Lørdag"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:23
+msgid "date.month_names.0"
+msgstr "~"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:24
+msgid "date.month_names.1"
+msgstr "Januar"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:25
+msgid "date.month_names.2"
+msgstr "Februar"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:26
+msgid "date.month_names.3"
+msgstr "Marts"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:27
+msgid "date.month_names.4"
+msgstr "April"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:28
+msgid "date.month_names.5"
+msgstr "Maj"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:29
+msgid "date.month_names.6"
+msgstr "Juni"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:30
+msgid "date.month_names.7"
+msgstr "Juli"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:31
+msgid "date.month_names.8"
+msgstr "August"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:32
+msgid "date.month_names.9"
+msgstr "September"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:33
+msgid "date.month_names.10"
+msgstr "Oktober"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:34
+msgid "date.month_names.11"
+msgstr "November"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:35
+msgid "date.month_names.12"
+msgstr "December"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:36
+msgid "date.abbr_month_names.0"
+msgstr "~"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:37
+msgid "date.abbr_month_names.1"
+msgstr "Jan"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:38
+msgid "date.abbr_month_names.2"
+msgstr "Feb"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:39
+msgid "date.abbr_month_names.3"
+msgstr "Mar"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:40
+msgid "date.abbr_month_names.4"
+msgstr "Apr"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:41
+msgid "date.abbr_month_names.5"
+msgstr "Maj"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:42
+msgid "date.abbr_month_names.6"
+msgstr "Jun"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:43
+msgid "date.abbr_month_names.7"
+msgstr "Jul"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:44
+msgid "date.abbr_month_names.8"
+msgstr "Aug"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:45
+msgid "date.abbr_month_names.9"
+msgstr "Sep"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:46
+msgid "date.abbr_month_names.10"
+msgstr "Okt"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:47
+msgid "date.abbr_month_names.11"
+msgstr "Nov"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:48
+msgid "date.abbr_month_names.12"
+msgstr "Dec"
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:49
+msgid "date.order.0"
+msgstr ""
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:50
+msgid "date.order.1"
+msgstr ""
+
+#: lib/gettext_simple_rails/date_translator_translations.rb:51
+msgid "date.order.2"
+msgstr ""
+
+#. Default value: %a, %d %b %Y %H:%M:%S %z
+#: lib/gettext_simple_rails/date_translator_translations.rb:53
+msgid "time.formats.default"
+msgstr "%a, %d %b %Y %H:%M:%S %z"
+
+#. Default value: %d %b %H:%M
+#: lib/gettext_simple_rails/date_translator_translations.rb:55
+msgid "time.formats.short"
+msgstr "%d %b %H:%M"
+
+#. Default value: %B %d, %Y %H:%M
+#: lib/gettext_simple_rails/date_translator_translations.rb:57
+msgid "time.formats.long"
+msgstr "%B %d, %Y %H:%M"
+
+#. Default value: am
+#: lib/gettext_simple_rails/date_translator_translations.rb:59
+msgid "time.am"
+msgstr ""
+
+#. Default value: pm
+#: lib/gettext_simple_rails/date_translator_translations.rb:61
+msgid "time.pm"
+msgstr ""
+
+#. Default value: ,
+#: lib/gettext_simple_rails/number_translator_translations.rb:4
+msgid "number.currency.format.delimiter"
+msgstr "."
+
+#. Default value: %n %u
+#: lib/gettext_simple_rails/number_translator_translations.rb:6
+msgid "number.currency.format.format"
+msgstr "%n %u"
+
+#. Default value: .
+#: lib/gettext_simple_rails/number_translator_translations.rb:8
+msgid "number.currency.format.separator"
+msgstr ","
+
+#. Default value: $
+#: lib/gettext_simple_rails/number_translator_translations.rb:10
+msgid "number.currency.format.unit"
+msgstr "DKK"
+
+#. Default value: ,
+#: lib/gettext_simple_rails/number_translator_translations.rb:12
+msgid "number.format.delimiter"
+msgstr "."
+
+#. Default value: .
+#: lib/gettext_simple_rails/number_translator_translations.rb:14
+msgid "number.format.separator"
+msgstr ","
+
+#. Default value: %n %u
+#: lib/gettext_simple_rails/number_translator_translations.rb:16
+msgid "number.human.decimal_units.format"
+msgstr ""
+
+#. Default value: Billion
+#: lib/gettext_simple_rails/number_translator_translations.rb:18
+msgid "number.human.decimal_units.units.billion"
+msgstr ""
+
+#. Default value: Million
+#: lib/gettext_simple_rails/number_translator_translations.rb:20
+msgid "number.human.decimal_units.units.million"
+msgstr ""
+
+#. Default value: Quadrillion
+#: lib/gettext_simple_rails/number_translator_translations.rb:22
+msgid "number.human.decimal_units.units.quadrillion"
+msgstr ""
+
+#. Default value: Thousand
+#: lib/gettext_simple_rails/number_translator_translations.rb:24
+msgid "number.human.decimal_units.units.thousand"
+msgstr ""
+
+#. Default value: Trillion
+#: lib/gettext_simple_rails/number_translator_translations.rb:26
+msgid "number.human.decimal_units.units.trillion"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/number_translator_translations.rb:28
+msgid "number.human.decimal_units.units.unit"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/number_translator_translations.rb:30
+msgid "number.human.format.delimiter"
+msgstr ""
+
+#. Default value: %n %u
+#: lib/gettext_simple_rails/number_translator_translations.rb:32
+msgid "number.human.storage_units.format"
+msgstr ""
+
+#. Default value: Byte
+#: lib/gettext_simple_rails/number_translator_translations.rb:34
+msgid "number.human.storage_units.units.byte.one"
+msgstr ""
+
+#. Default value: Bytes
+#: lib/gettext_simple_rails/number_translator_translations.rb:36
+msgid "number.human.storage_units.units.byte.other"
+msgstr ""
+
+#. Default value: GB
+#: lib/gettext_simple_rails/number_translator_translations.rb:38
+msgid "number.human.storage_units.units.gb"
+msgstr ""
+
+#. Default value: KB
+#: lib/gettext_simple_rails/number_translator_translations.rb:40
+msgid "number.human.storage_units.units.kb"
+msgstr ""
+
+#. Default value: MB
+#: lib/gettext_simple_rails/number_translator_translations.rb:42
+msgid "number.human.storage_units.units.mb"
+msgstr ""
+
+#. Default value: TB
+#: lib/gettext_simple_rails/number_translator_translations.rb:44
+msgid "number.human.storage_units.units.tb"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/number_translator_translations.rb:46
+msgid "number.percentage.format.delimiter"
+msgstr ""
+
+#. Default value: Your account was successfully confirmed.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:4
+msgid "devise.confirmations.confirmed"
+msgstr ""
+
+#. Default value: You will receive an email with instructions about how to confirm your account in a few minutes.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:6
+msgid "devise.confirmations.send_instructions"
+msgstr ""
+
+#. Default value: If your email address exists in our database, you will receive an email with instructions about how to confirm your account in a few minutes.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:8
+msgid "devise.confirmations.send_paranoid_instructions"
+msgstr ""
+
+#. Default value: You are already signed in.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:10
+msgid "devise.failure.already_authenticated"
+msgstr ""
+
+#. Default value: Your account is not activated yet.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:12
+msgid "devise.failure.inactive"
+msgstr ""
+
+#. Default value: Invalid email or password.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:14
+msgid "devise.failure.invalid"
+msgstr ""
+
+#. Default value: Your account is locked.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:16
+msgid "devise.failure.locked"
+msgstr ""
+
+#. Default value: You have one more attempt before your account will be locked.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:18
+msgid "devise.failure.last_attempt"
+msgstr ""
+
+#. Default value: Invalid email or password.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:20
+msgid "devise.failure.not_found_in_database"
+msgstr ""
+
+#. Default value: Your session expired. Please sign in again to continue.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:22
+msgid "devise.failure.timeout"
+msgstr ""
+
+#. Default value: You need to sign in or sign up before continuing.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:24
+msgid "devise.failure.unauthenticated"
+msgstr ""
+
+#. Default value: You have to confirm your account before continuing.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:26
+msgid "devise.failure.unconfirmed"
+msgstr ""
+
+#. Default value: You are already signed in.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:28
+msgid "devise.failure.user.already_authenticated"
+msgstr ""
+
+#. Default value: Your account is not activated yet.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:30
+msgid "devise.failure.user.inactive"
+msgstr ""
+
+#. Default value: Invalid email or password.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:32
+msgid "devise.failure.user.invalid"
+msgstr ""
+
+#. Default value: Your account is locked.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:34
+msgid "devise.failure.user.locked"
+msgstr ""
+
+#. Default value: You have one more attempt before your account will be locked.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:36
+msgid "devise.failure.user.last_attempt"
+msgstr ""
+
+#. Default value: Invalid email or password.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:38
+msgid "devise.failure.user.not_found_in_database"
+msgstr ""
+
+#. Default value: Your session expired. Please sign in again to continue.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:40
+msgid "devise.failure.user.timeout"
+msgstr ""
+
+#. Default value: You need to sign in or sign up before continuing.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:42
+msgid "devise.failure.user.unauthenticated"
+msgstr ""
+
+#. Default value: You have to confirm your account before continuing.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:44
+msgid "devise.failure.user.unconfirmed"
+msgstr ""
+
+#. Default value: Confirmation instructions
+#: lib/gettext_simple_rails/devise_translator_translations.rb:46
+msgid "devise.mailer.confirmation_instructions.subject"
+msgstr ""
+
+#. Default value: Reset password instructions
+#: lib/gettext_simple_rails/devise_translator_translations.rb:48
+msgid "devise.mailer.reset_password_instructions.subject"
+msgstr ""
+
+#. Default value: Unlock Instructions
+#: lib/gettext_simple_rails/devise_translator_translations.rb:50
+msgid "devise.mailer.unlock_instructions.subject"
+msgstr ""
+
+#. Default value: Could not authenticate you from %{kind} because "%{reason}".
+#: lib/gettext_simple_rails/devise_translator_translations.rb:52
+msgid "devise.omniauth_callbacks.failure"
+msgstr ""
+
+#. Default value: Successfully authenticated from %{kind} account.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:54
+msgid "devise.omniauth_callbacks.success"
+msgstr ""
+
+#. Default value: You can't access this page without coming from a password reset email. If you do come from a password reset email, please make sure you used the full URL provided.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:56
+msgid "devise.passwords.no_token"
+msgstr ""
+
+#. Default value: You will receive an email with instructions on how to reset your password in a few minutes.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:58
+msgid "devise.passwords.send_instructions"
+msgstr ""
+
+#. Default value: If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:60
+msgid "devise.passwords.send_paranoid_instructions"
+msgstr ""
+
+#. Default value: Your password was changed successfully. You are now signed in.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:62
+msgid "devise.passwords.updated"
+msgstr ""
+
+#. Default value: Your password was changed successfully.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:64
+msgid "devise.passwords.updated_not_active"
+msgstr ""
+
+#. Default value: Bye! Your account was successfully cancelled. We hope to see you again soon.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:66
+msgid "devise.registrations.destroyed"
+msgstr ""
+
+#. Default value: Welcome! You have signed up successfully.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:68
+msgid "devise.registrations.signed_up"
+msgstr ""
+
+#. Default value: You have signed up successfully. However, we could not sign you in because your account is not yet activated.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:70
+msgid "devise.registrations.signed_up_but_inactive"
+msgstr ""
+
+#. Default value: You have signed up successfully. However, we could not sign you in because your account is locked.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:72
+msgid "devise.registrations.signed_up_but_locked"
+msgstr ""
+
+#. Default value: A message with a confirmation link has been sent to your email address. Please open the link to activate your account.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:74
+msgid "devise.registrations.signed_up_but_unconfirmed"
+msgstr ""
+
+#. Default value: You updated your account successfully, but we need to verify your new email address. Please check your email and click on the confirm link to finalize confirming your new email address.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:76
+msgid "devise.registrations.update_needs_confirmation"
+msgstr ""
+
+#. Default value: You updated your account successfully.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:78
+msgid "devise.registrations.updated"
+msgstr ""
+
+#. Default value: Signed in successfully.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:80
+msgid "devise.sessions.signed_in"
+msgstr "Logget ind."
+
+#. Default value: Signed out successfully.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:82
+msgid "devise.sessions.signed_out"
+msgstr "Logget ud."
+
+#. Default value: You will receive an email with instructions about how to unlock your account in a few minutes.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:84
+msgid "devise.unlocks.send_instructions"
+msgstr ""
+
+#. Default value: If your account exists, you will receive an email with instructions about how to unlock it in a few minutes.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:86
+msgid "devise.unlocks.send_paranoid_instructions"
+msgstr ""
+
+#. Default value: Your account has been unlocked successfully. Please sign in to continue.
+#: lib/gettext_simple_rails/devise_translator_translations.rb:88
+msgid "devise.unlocks.unlocked"
+msgstr ""
+
+#. Default value: was already confirmed, please try signing in
+#: lib/gettext_simple_rails/devise_translator_translations.rb:90
+msgid "errors.messages.already_confirmed"
+msgstr ""
+
+#. Default value: needs to be confirmed within %{period}, please request a new one
+#: lib/gettext_simple_rails/devise_translator_translations.rb:92
+msgid "errors.messages.confirmation_period_expired"
+msgstr ""
+
+#. Default value: has expired, please request a new one
+#: lib/gettext_simple_rails/devise_translator_translations.rb:94
+msgid "errors.messages.expired"
+msgstr ""
+
+#. Default value: not found
+#: lib/gettext_simple_rails/devise_translator_translations.rb:96
+msgid "errors.messages.not_found"
+msgstr ""
+
+#. Default value: was not locked
+#: lib/gettext_simple_rails/devise_translator_translations.rb:98
+msgid "errors.messages.not_locked"
+msgstr ""
+
+#. Default value: 1 error prohibited this %{resource} from being saved:
+#: lib/gettext_simple_rails/devise_translator_translations.rb:100
+msgid "errors.messages.not_saved.one"
+msgstr ""
+
+#. Default value: %{count} errors prohibited this %{resource} from being saved:
+#: lib/gettext_simple_rails/devise_translator_translations.rb:102
+msgid "errors.messages.not_saved.other"
+msgstr ""
+
+#. Default value: Invalid record: %{errors}
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:4
+msgid "activerecord.errors.messages.record_invalid"
+msgstr "Ugyldig model: %{errors}"
+
+#. Default value: cannot be blank
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:6
+msgid "activerecord.errors.models.user.attributes.email.blank"
+msgstr "kan ikke være tom"
+
+#. Default value: has already been taken
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:8
+msgid "activerecord.errors.models.user.attributes.email.taken"
+msgstr "er allerede i brug"
+
+#. Default value: is invalid
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:10
+msgid "activerecord.errors.models.user.attributes.email.invalid"
+msgstr "er ikke gyldig"
+
+#. Default value: cannot be blank
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:12
+msgid "activerecord.errors.models.user.attributes.password.blank"
+msgstr "kan ikke være tom"
+
+#. Default value: is too short. The minimum is %{count}
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:14
+msgid "activerecord.errors.models.user.attributes.password.too_short"
+msgstr "er for kort. Minimum er %{count}"
+
+#. Default value: is too long. The maximum is %{count}
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:16
+msgid "activerecord.errors.models.user.attributes.password.too_long"
+msgstr "er for lang. Maksimum er %{count}"
+
+#. Default value: cannot be blank
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:18
+msgid "activerecord.errors.models.group.attributes.name.blank"
+msgstr "kan ikke være tom"
+
+#. Default value: cannot be blank
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:20
+msgid "activerecord.errors.models.group_reporter.attributes.group.blank"
+msgstr "kan ikke være tom"
+
+#. Default value: cannot be blank
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:22
+msgid "activerecord.errors.models.group_reporter.attributes.reporter.blank"
+msgstr "kan ikke være tom"
+
+#. Default value: has already been taken
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:24
+msgid "activerecord.errors.models.group_reporter.attributes.reporter.taken"
+msgstr "er allerede i brug"
+
+#. Default value: cannot be blank
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:26
+msgid "activerecord.errors.models.option.attributes.resource.blank"
+msgstr "kan ikke være tom"
+
+#. Default value: cannot be blank
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:28
+msgid "activerecord.errors.models.option.attributes.key.blank"
+msgstr "kan ikke være tom"
+
+#. Default value: cannot be blank
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:30
+msgid "activerecord.errors.models.plugin.attributes.name.blank"
+msgstr "kan ikke være tom"
+
+#. Default value: cannot be blank
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:32
+msgid "activerecord.errors.models.reporter.attributes.name.blank"
+msgstr "kan ikke være tom"
+
+#. Default value: cannot be blank
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:34
+msgid "activerecord.errors.models.reporter.attributes.reporter_plugin.blank"
+msgstr "kan ikke være tom"
+
+#. Default value: cannot be blank
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:36
+msgid "activerecord.errors.models.reporter_plugin.attributes.name.blank"
+msgstr "kan ikke være tom"
+
+#. Default value: cannot be blank
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:38
+msgid "activerecord.errors.models.service.attributes.name.blank"
+msgstr "kan ikke være tom"
+
+#. Default value: cannot be blank
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:40
+msgid "activerecord.errors.models.service.attributes.plugin.blank"
+msgstr "kan ikke være tom"
+
+#. Default value: cannot be blank
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:42
+msgid "activerecord.errors.models.service.attributes.group.blank"
+msgstr "kan ikke være tom"
+
+#. Default value: cannot be blank
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:44
+msgid "activerecord.errors.models.service_reporter.attributes.service.blank"
+msgstr "kan ikke være tom"
+
+#. Default value: cannot be blank
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:46
+msgid "activerecord.errors.models.service_reporter.attributes.reporter.blank"
+msgstr "kan ikke være tom"
+
+#. Default value: has already been taken
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:48
+msgid "activerecord.errors.models.service_reporter.attributes.reporter.taken"
+msgstr "er allerede i brug"
+
+#. Default value: cannot be blank
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:50
+msgid "activerecord.errors.models.user_role.attributes.user.blank"
+msgstr "kan ikke være tom"
+
+#. Default value: cannot be blank
+#: lib/gettext_simple_rails/active_record_validations_translator_translations.rb:52
+msgid "activerecord.errors.models.user_role.attributes.role.blank"
+msgstr "kan ikke være tom"
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:4
+msgid "simple_form.hints.user.id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:6
+msgid "simple_form.hints.user.created_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:8
+msgid "simple_form.hints.user.updated_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:10
+msgid "simple_form.hints.user.email"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:12
+msgid "simple_form.hints.user.encrypted_password"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:14
+msgid "simple_form.hints.user.reset_password_token"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:16
+msgid "simple_form.hints.user.reset_password_sent_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:18
+msgid "simple_form.hints.user.remember_created_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:20
+msgid "simple_form.hints.user.sign_in_count"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:22
+msgid "simple_form.hints.user.current_sign_in_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:24
+msgid "simple_form.hints.user.last_sign_in_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:26
+msgid "simple_form.hints.user.current_sign_in_ip"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:28
+msgid "simple_form.hints.user.last_sign_in_ip"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:30
+msgid "simple_form.hints.group.id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:32
+msgid "simple_form.hints.group.name"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:34
+msgid "simple_form.hints.group.created_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:36
+msgid "simple_form.hints.group.updated_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:38
+msgid "simple_form.hints.group_reporter.id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:40
+msgid "simple_form.hints.group_reporter.group_id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:42
+msgid "simple_form.hints.group_reporter.reporter_id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:44
+msgid "simple_form.hints.group_reporter.created_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:46
+msgid "simple_form.hints.group_reporter.updated_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:48
+msgid "simple_form.hints.option.id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:50
+msgid "simple_form.hints.option.resource_type"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:52
+msgid "simple_form.hints.option.resource_id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:54
+msgid "simple_form.hints.option.key"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:56
+msgid "simple_form.hints.option.value"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:58
+msgid "simple_form.hints.option.created_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:60
+msgid "simple_form.hints.option.updated_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:62
+msgid "simple_form.hints.plugin.id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:64
+msgid "simple_form.hints.plugin.name"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:66
+msgid "simple_form.hints.plugin.created_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:68
+msgid "simple_form.hints.plugin.updated_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:70
+msgid "simple_form.hints.reporter.id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:72
+msgid "simple_form.hints.reporter.name"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:74
+msgid "simple_form.hints.reporter.created_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:76
+msgid "simple_form.hints.reporter.updated_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:78
+msgid "simple_form.hints.reporter.reporter_plugin_id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:80
+msgid "simple_form.hints.reporter_plugin.id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:82
+msgid "simple_form.hints.reporter_plugin.name"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:84
+msgid "simple_form.hints.reporter_plugin.created_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:86
+msgid "simple_form.hints.reporter_plugin.updated_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:88
+msgid "simple_form.hints.service.id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:90
+msgid "simple_form.hints.service.name"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:92
+msgid "simple_form.hints.service.timeout"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:94
+msgid "simple_form.hints.service.last_run_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:96
+msgid "simple_form.hints.service.group_id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:98
+msgid "simple_form.hints.service.active"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:100
+msgid "simple_form.hints.service.failed"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:102
+msgid "simple_form.hints.service.created_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:104
+msgid "simple_form.hints.service.updated_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:106
+msgid "simple_form.hints.service.plugin_id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:108
+msgid "simple_form.hints.service_reporter.id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:110
+msgid "simple_form.hints.service_reporter.service_id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:112
+msgid "simple_form.hints.service_reporter.reporter_id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:114
+msgid "simple_form.hints.service_reporter.created_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:116
+msgid "simple_form.hints.service_reporter.updated_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:118
+msgid "simple_form.hints.user_role.id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:120
+msgid "simple_form.hints.user_role.user_id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:122
+msgid "simple_form.hints.user_role.role"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:124
+msgid "simple_form.hints.user_role.created_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:126
+msgid "simple_form.hints.user_role.updated_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:128
+msgid "simple_form.placeholders.user.id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:130
+msgid "simple_form.placeholders.user.created_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:132
+msgid "simple_form.placeholders.user.updated_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:134
+msgid "simple_form.placeholders.user.email"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:136
+msgid "simple_form.placeholders.user.encrypted_password"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:138
+msgid "simple_form.placeholders.user.reset_password_token"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:140
+msgid "simple_form.placeholders.user.reset_password_sent_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:142
+msgid "simple_form.placeholders.user.remember_created_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:144
+msgid "simple_form.placeholders.user.sign_in_count"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:146
+msgid "simple_form.placeholders.user.current_sign_in_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:148
+msgid "simple_form.placeholders.user.last_sign_in_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:150
+msgid "simple_form.placeholders.user.current_sign_in_ip"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:152
+msgid "simple_form.placeholders.user.last_sign_in_ip"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:154
+msgid "simple_form.placeholders.group.id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:156
+msgid "simple_form.placeholders.group.name"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:158
+msgid "simple_form.placeholders.group.created_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:160
+msgid "simple_form.placeholders.group.updated_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:162
+msgid "simple_form.placeholders.group_reporter.id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:164
+msgid "simple_form.placeholders.group_reporter.group_id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:166
+msgid "simple_form.placeholders.group_reporter.reporter_id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:168
+msgid "simple_form.placeholders.group_reporter.created_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:170
+msgid "simple_form.placeholders.group_reporter.updated_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:172
+msgid "simple_form.placeholders.option.id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:174
+msgid "simple_form.placeholders.option.resource_type"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:176
+msgid "simple_form.placeholders.option.resource_id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:178
+msgid "simple_form.placeholders.option.key"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:180
+msgid "simple_form.placeholders.option.value"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:182
+msgid "simple_form.placeholders.option.created_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:184
+msgid "simple_form.placeholders.option.updated_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:186
+msgid "simple_form.placeholders.plugin.id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:188
+msgid "simple_form.placeholders.plugin.name"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:190
+msgid "simple_form.placeholders.plugin.created_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:192
+msgid "simple_form.placeholders.plugin.updated_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:194
+msgid "simple_form.placeholders.reporter.id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:196
+msgid "simple_form.placeholders.reporter.name"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:198
+msgid "simple_form.placeholders.reporter.created_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:200
+msgid "simple_form.placeholders.reporter.updated_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:202
+msgid "simple_form.placeholders.reporter.reporter_plugin_id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:204
+msgid "simple_form.placeholders.reporter_plugin.id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:206
+msgid "simple_form.placeholders.reporter_plugin.name"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:208
+msgid "simple_form.placeholders.reporter_plugin.created_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:210
+msgid "simple_form.placeholders.reporter_plugin.updated_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:212
+msgid "simple_form.placeholders.service.id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:214
+msgid "simple_form.placeholders.service.name"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:216
+msgid "simple_form.placeholders.service.timeout"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:218
+msgid "simple_form.placeholders.service.last_run_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:220
+msgid "simple_form.placeholders.service.group_id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:222
+msgid "simple_form.placeholders.service.active"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:224
+msgid "simple_form.placeholders.service.failed"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:226
+msgid "simple_form.placeholders.service.created_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:228
+msgid "simple_form.placeholders.service.updated_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:230
+msgid "simple_form.placeholders.service.plugin_id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:232
+msgid "simple_form.placeholders.service_reporter.id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:234
+msgid "simple_form.placeholders.service_reporter.service_id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:236
+msgid "simple_form.placeholders.service_reporter.reporter_id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:238
+msgid "simple_form.placeholders.service_reporter.created_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:240
+msgid "simple_form.placeholders.service_reporter.updated_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:242
+msgid "simple_form.placeholders.user_role.id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:244
+msgid "simple_form.placeholders.user_role.user_id"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:246
+msgid "simple_form.placeholders.user_role.role"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:248
+msgid "simple_form.placeholders.user_role.created_at"
+msgstr ""
+
+#. Default value:
+#: lib/gettext_simple_rails/simple_form_translator_translations.rb:250
+msgid "simple_form.placeholders.user_role.updated_at"
+msgstr ""
+
+#. Default value: id
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:4
+msgid "activerecord.attributes.user.id"
+msgstr "ID"
+
+#. Default value: created_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:6
+msgid "activerecord.attributes.user.created_at"
+msgstr "Oprettet d."
+
+#. Default value: updated_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:8
+msgid "activerecord.attributes.user.updated_at"
+msgstr "Opdateret d."
+
+#. Default value: email
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:10
+msgid "activerecord.attributes.user.email"
+msgstr "Email"
+
+#. Default value: encrypted_password
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:12
+msgid "activerecord.attributes.user.encrypted_password"
+msgstr "Krypteret adgangskode"
+
+#. Default value: reset_password_token
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:14
+msgid "activerecord.attributes.user.reset_password_token"
+msgstr ""
+
+#. Default value: reset_password_sent_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:16
+msgid "activerecord.attributes.user.reset_password_sent_at"
+msgstr ""
+
+#. Default value: remember_created_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:18
+msgid "activerecord.attributes.user.remember_created_at"
+msgstr ""
+
+#. Default value: sign_in_count
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:20
+msgid "activerecord.attributes.user.sign_in_count"
+msgstr ""
+
+#. Default value: current_sign_in_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:22
+msgid "activerecord.attributes.user.current_sign_in_at"
+msgstr ""
+
+#. Default value: last_sign_in_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:24
+msgid "activerecord.attributes.user.last_sign_in_at"
+msgstr ""
+
+#. Default value: current_sign_in_ip
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:26
+msgid "activerecord.attributes.user.current_sign_in_ip"
+msgstr ""
+
+#. Default value: last_sign_in_ip
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:28
+msgid "activerecord.attributes.user.last_sign_in_ip"
+msgstr ""
+
+#. Default value: user_roles
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:30
+msgid "activerecord.attributes.user.user_roles"
+msgstr "Brugerroller"
+
+#. Default value: id
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:32
+msgid "activerecord.attributes.group.id"
+msgstr "ID"
+
+#. Default value: name
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:34
+msgid "activerecord.attributes.group.name"
+msgstr "Navn"
+
+#. Default value: created_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:36
+msgid "activerecord.attributes.group.created_at"
+msgstr "Oprettet d."
+
+#. Default value: updated_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:38
+msgid "activerecord.attributes.group.updated_at"
+msgstr "Opdateret d."
+
+#. Default value: group_reporters
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:40
+msgid "activerecord.attributes.group.group_reporters"
+msgstr "Gruppe reporter"
+
+#. Default value: services
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:42
+msgid "activerecord.attributes.group.services"
+msgstr "Services"
+
+#. Default value: reporters
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:44
+msgid "activerecord.attributes.group.reporters"
+msgstr "Reporters"
+
+#. Default value: id
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:46
+msgid "activerecord.attributes.group_reporter.id"
+msgstr "ID"
+
+#. Default value: group_id
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:48
+msgid "activerecord.attributes.group_reporter.group_id"
+msgstr "Gruppe ID"
+
+#. Default value: reporter_id
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:50
+msgid "activerecord.attributes.group_reporter.reporter_id"
+msgstr "Reporter ID"
+
+#. Default value: created_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:52
+msgid "activerecord.attributes.group_reporter.created_at"
+msgstr "Oprettet d."
+
+#. Default value: updated_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:54
+msgid "activerecord.attributes.group_reporter.updated_at"
+msgstr "Opdateret d."
+
+#. Default value: group
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:56
+msgid "activerecord.attributes.group_reporter.group"
+msgstr "Gruppe"
+
+#. Default value: reporter
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:58
+msgid "activerecord.attributes.group_reporter.reporter"
+msgstr "Reporter"
+
+#. Default value: id
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:60
+msgid "activerecord.attributes.option.id"
+msgstr "ID"
+
+#. Default value: resource_type
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:62
+msgid "activerecord.attributes.option.resource_type"
+msgstr "Ressource type"
+
+#. Default value: resource_id
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:64
+msgid "activerecord.attributes.option.resource_id"
+msgstr "Ressource ID"
+
+#. Default value: key
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:66
+msgid "activerecord.attributes.option.key"
+msgstr "Nøgle"
+
+#. Default value: value
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:68
+msgid "activerecord.attributes.option.value"
+msgstr "Værdi"
+
+#. Default value: created_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:70
+msgid "activerecord.attributes.option.created_at"
+msgstr "Oprettet d."
+
+#. Default value: updated_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:72
+msgid "activerecord.attributes.option.updated_at"
+msgstr "Opdateret d."
+
+#. Default value: resource
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:74
+msgid "activerecord.attributes.option.resource"
+msgstr "Ressource"
+
+#. Default value: id
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:76
+msgid "activerecord.attributes.plugin.id"
+msgstr "ID"
+
+#. Default value: name
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:78
+msgid "activerecord.attributes.plugin.name"
+msgstr "Navn"
+
+#. Default value: created_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:80
+msgid "activerecord.attributes.plugin.created_at"
+msgstr "Oprettet d."
+
+#. Default value: updated_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:82
+msgid "activerecord.attributes.plugin.updated_at"
+msgstr "Opdateret d."
+
+#. Default value: id
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:84
+msgid "activerecord.attributes.reporter.id"
+msgstr "ID"
+
+#. Default value: name
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:86
+msgid "activerecord.attributes.reporter.name"
+msgstr "Navn"
+
+#. Default value: created_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:88
+msgid "activerecord.attributes.reporter.created_at"
+msgstr "Oprettet d."
+
+#. Default value: updated_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:90
+msgid "activerecord.attributes.reporter.updated_at"
+msgstr "Opdateret d."
+
+#. Default value: reporter_plugin_id
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:92
+msgid "activerecord.attributes.reporter.reporter_plugin_id"
+msgstr "Reporter plugin ID"
+
+#. Default value: activities
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:94
+msgid "activerecord.attributes.reporter.activities"
+msgstr "Aktiviteter"
+
+#. Default value: reporter_plugin
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:96
+msgid "activerecord.attributes.reporter.reporter_plugin"
+msgstr "Reporter plugin"
+
+#. Default value: options
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:98
+msgid "activerecord.attributes.reporter.options"
+msgstr "Valgmulighed"
+
+#. Default value: group_reporters
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:100
+msgid "activerecord.attributes.reporter.group_reporters"
+msgstr "Gruppe reporters"
+
+#. Default value: groups
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:102
+msgid "activerecord.attributes.reporter.groups"
+msgstr "Grupper"
+
+#. Default value: service_reporters
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:104
+msgid "activerecord.attributes.reporter.service_reporters"
+msgstr "Service reporters"
+
+#. Default value: services
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:106
+msgid "activerecord.attributes.reporter.services"
+msgstr "Services"
+
+#. Default value: id
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:108
+msgid "activerecord.attributes.reporter_plugin.id"
+msgstr "ID"
+
+#. Default value: name
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:110
+msgid "activerecord.attributes.reporter_plugin.name"
+msgstr "Navn"
+
+#. Default value: created_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:112
+msgid "activerecord.attributes.reporter_plugin.created_at"
+msgstr "Oprettet d."
+
+#. Default value: updated_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:114
+msgid "activerecord.attributes.reporter_plugin.updated_at"
+msgstr "Opdateret d."
+
+#. Default value: id
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:116
+msgid "activerecord.attributes.service.id"
+msgstr "ID"
+
+#. Default value: name
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:118
+msgid "activerecord.attributes.service.name"
+msgstr "Navn"
+
+#. Default value: timeout
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:120
+msgid "activerecord.attributes.service.timeout"
+msgstr "Timeout"
+
+#. Default value: last_run_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:122
+msgid "activerecord.attributes.service.last_run_at"
+msgstr "Kørt sidst d."
+
+#. Default value: group_id
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:124
+msgid "activerecord.attributes.service.group_id"
+msgstr "Gruppe ID"
+
+#. Default value: active
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:126
+msgid "activerecord.attributes.service.active"
+msgstr "Aktiv"
+
+#. Default value: failed
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:128
+msgid "activerecord.attributes.service.failed"
+msgstr "Fejlet"
+
+#. Default value: created_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:130
+msgid "activerecord.attributes.service.created_at"
+msgstr "Oprettet d."
+
+#. Default value: updated_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:132
+msgid "activerecord.attributes.service.updated_at"
+msgstr "Opdateret d."
+
+#. Default value: plugin_id
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:134
+msgid "activerecord.attributes.service.plugin_id"
+msgstr "Plugin ID"
+
+#. Default value: activities
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:136
+msgid "activerecord.attributes.service.activities"
+msgstr "Aktiviteter"
+
+#. Default value: group
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:138
+msgid "activerecord.attributes.service.group"
+msgstr "Gruppe"
+
+#. Default value: plugin
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:140
+msgid "activerecord.attributes.service.plugin"
+msgstr "Plugin"
+
+#. Default value: options
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:142
+msgid "activerecord.attributes.service.options"
+msgstr "Valgmuligheder"
+
+#. Default value: service_reporterlinks
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:144
+msgid "activerecord.attributes.service.service_reporterlinks"
+msgstr "Service reporterlinks"
+
+#. Default value: reporters
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:146
+msgid "activerecord.attributes.service.reporters"
+msgstr "Reportere"
+
+#. Default value: id
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:148
+msgid "activerecord.attributes.service_reporter.id"
+msgstr "ID"
+
+#. Default value: service_id
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:150
+msgid "activerecord.attributes.service_reporter.service_id"
+msgstr "Service ID"
+
+#. Default value: reporter_id
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:152
+msgid "activerecord.attributes.service_reporter.reporter_id"
+msgstr "Reporter ID"
+
+#. Default value: created_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:154
+msgid "activerecord.attributes.service_reporter.created_at"
+msgstr "Oprettet d."
+
+#. Default value: updated_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:156
+msgid "activerecord.attributes.service_reporter.updated_at"
+msgstr "Opdateret d."
+
+#. Default value: reporter
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:158
+msgid "activerecord.attributes.service_reporter.reporter"
+msgstr "Reporter"
+
+#. Default value: service
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:160
+msgid "activerecord.attributes.service_reporter.service"
+msgstr "Service"
+
+#. Default value: id
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:162
+msgid "activerecord.attributes.user_role.id"
+msgstr "ID"
+
+#. Default value: user_id
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:164
+msgid "activerecord.attributes.user_role.user_id"
+msgstr "Bruger ID"
+
+#. Default value: role
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:166
+msgid "activerecord.attributes.user_role.role"
+msgstr "Rolle"
+
+#. Default value: created_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:168
+msgid "activerecord.attributes.user_role.created_at"
+msgstr "Oprettet d."
+
+#. Default value: updated_at
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:170
+msgid "activerecord.attributes.user_role.updated_at"
+msgstr "Opdateret d."
+
+#. Default value: user
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:172
+msgid "activerecord.attributes.user_role.user"
+msgstr "Bruger"
+
+#. Default value: User
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:174
+msgid "activerecord.models.user.one"
+msgstr "Bruger"
+
+#. Default value: User
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:176
+msgid "activerecord.models.user.other"
+msgstr "Brugere"
+
+#. Default value: Group
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:178
+msgid "activerecord.models.group.one"
+msgstr "Gruppe"
+
+#. Default value: Group
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:180
+msgid "activerecord.models.group.other"
+msgstr "Grupper"
+
+#. Default value: GroupReporter
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:182
+msgid "activerecord.models.group_reporter.one"
+msgstr "Gruppe reporter"
+
+#. Default value: GroupReporter
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:184
+msgid "activerecord.models.group_reporter.other"
+msgstr "Gruppe reporters"
+
+#. Default value: Option
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:186
+msgid "activerecord.models.option.one"
+msgstr "Valgmulighed"
+
+#. Default value: Option
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:188
+msgid "activerecord.models.option.other"
+msgstr "Valgmuligheder"
+
+#. Default value: Plugin
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:190
+msgid "activerecord.models.plugin.one"
+msgstr "Plugin"
+
+#. Default value: Plugin
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:192
+msgid "activerecord.models.plugin.other"
+msgstr "Plugins"
+
+#. Default value: Reporter
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:194
+msgid "activerecord.models.reporter.one"
+msgstr "Reporter"
+
+#. Default value: Reporter
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:196
+msgid "activerecord.models.reporter.other"
+msgstr "Reporters"
+
+#. Default value: ReporterPlugin
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:198
+msgid "activerecord.models.reporter_plugin.one"
+msgstr "Reporter plugin"
+
+#. Default value: ReporterPlugin
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:200
+msgid "activerecord.models.reporter_plugin.other"
+msgstr "Reporter plugins"
+
+#. Default value: Service
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:202
+msgid "activerecord.models.service.one"
+msgstr "Service"
+
+#. Default value: Service
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:204
+msgid "activerecord.models.service.other"
+msgstr "Services"
+
+#. Default value: ServiceReporter
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:206
+msgid "activerecord.models.service_reporter.one"
+msgstr "Service reporter"
+
+#. Default value: ServiceReporter
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:208
+msgid "activerecord.models.service_reporter.other"
+msgstr "Service reporters"
+
+#. Default value: UserRole
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:210
+msgid "activerecord.models.user_role.one"
+msgstr "Brugerrolle"
+
+#. Default value: UserRole
+#: lib/gettext_simple_rails/active_record_attributes_translator_translations.rb:212
+msgid "activerecord.models.user_role.other"
+msgstr "Brugerroller"
+
+#: lib/plugins/ssh_mailsupport.rb:4 lib/plugins/ssh_memory_usage.rb:4
+#: lib/plugins/mysql.rb:4 lib/plugins/ssh_swapping.rb:4 lib/plugins/ftp.rb:8
+#: lib/plugins/ssh_service.rb:9 lib/plugins/ssh_diskspace.rb:4
+#: lib/plugins/ssh.rb:10 lib/plugins/http.rb:8
+#: lib/plugins/ssh_file_exists.rb:4
+msgid "Hostname"
+msgstr "Hostnavn"
+
+#: lib/plugins/ssh_mailsupport.rb:7 lib/plugins/ssh_memory_usage.rb:7
+#: lib/plugins/mail.rb:7 lib/plugins/mysql.rb:7 lib/plugins/ssh_swapping.rb:7
+#: lib/plugins/ftp.rb:4 lib/plugins/ssh_service.rb:5
+#: lib/plugins/ssh_diskspace.rb:7 lib/plugins/ssh.rb:5 lib/plugins/http.rb:4
+#: lib/plugins/ssh_file_exists.rb:7
+msgid "Port"
+msgstr "Port"
+
+#: lib/plugins/ssh_mailsupport.rb:11 lib/plugins/ssh_memory_usage.rb:11
+#: lib/plugins/mail.rb:17 lib/plugins/mysql.rb:11
+#: lib/plugins/ssh_swapping.rb:11 lib/plugins/ftp.rb:11
+#: lib/plugins/ssh_service.rb:12 lib/plugins/ssh_diskspace.rb:11
+#: lib/plugins/ssh.rb:14 lib/plugins/ssh_file_exists.rb:11
+msgid "Username"
+msgstr "Brugernavn"
+
+#: lib/plugins/ssh_mailsupport.rb:15 lib/plugins/ssh_memory_usage.rb:15
+#: lib/plugins/mail.rb:21 lib/plugins/mysql.rb:15
+#: lib/plugins/ssh_swapping.rb:15 lib/plugins/ftp.rb:14
+#: lib/plugins/ssh_service.rb:16 lib/plugins/ssh_diskspace.rb:15
+#: lib/plugins/ssh.rb:19 lib/plugins/ssh_file_exists.rb:15
+msgid "Password"
+msgstr "Adgangskode"
+
+#: lib/plugins/ssh_mailsupport.rb:18
+msgid "Send to address"
+msgstr "Til til adresse"
+
+#: lib/plugins/ssh_mailsupport.rb:21
+msgid "IMAP host"
+msgstr "IMAP host"
+
+#: lib/plugins/ssh_mailsupport.rb:24
+msgid "IMAP port"
+msgstr "IMAP port"
+
+#: lib/plugins/ssh_mailsupport.rb:30
+msgid "IMAP username"
+msgstr "IMAP brugernavn"
+
+#: lib/plugins/ssh_mailsupport.rb:33
+msgid "IMAP password"
+msgstr "IMAP adgangskode"
+
+#: lib/plugins/ssh_mailsupport.rb:106
+msgid "Could not find the test-email on the given account."
+msgstr "Kunne ikke finde test-email på den givne konto."
+
+#: lib/plugins/ssh_memory_usage.rb:18 lib/plugins/ssh_diskspace.rb:21
+msgid "Warning percent"
+msgstr "Advarsels procent"
+
+#: lib/plugins/ssh_memory_usage.rb:37 lib/plugins/ssh_diskspace.rb:37
+msgid ""
+"Warning percent is not numeric - please enter it correctly as number only."
+msgstr ""
+"Advarsels procent er ikke et nummer - indtast det venligst kun som et nummer."
+
+#: lib/plugins/mail.rb:4
+msgid "Host"
+msgstr "Host"
+
+#: lib/plugins/mail.rb:10
+msgid "Type"
+msgstr "Type"
+
+#: lib/plugins/mail.rb:11
+msgid "IMAP"
+msgstr "IMAP"
+
+#: lib/plugins/mail.rb:11
+msgid "SMTP"
+msgstr "SMTP"
+
+#: lib/plugins/mail.rb:14 lib/plugins/http.rb:14
+msgid "SSL"
+msgstr "SSL"
+
+#: lib/plugins/mail.rb:50
+msgid "Unknown type: '%s'."
+msgstr "Ukendt type: '%s'."
+
+#: lib/plugins/mysql.rb:18
+msgid "Database"
+msgstr "Database"
+
+#: lib/plugins/ftp.rb:32
+msgid "Connection refused when connecting to '%1$s:%2$s'."
+msgstr "Forbindelsen blev afvist da der blev forbindet til '%1$s:%2$s'."
+
+#: lib/plugins/ssh_service.rb:19
+msgid "Service name"
+msgstr "Service navn"
+
+#: lib/plugins/ssh_service.rb:22
+msgid "Sudo password"
+msgstr "Sudo adgangskode"
+
+#: lib/plugins/ssh_service.rb:53
+msgid "Looks like the service %1$s is not running: '%2$s'."
+msgstr "Det ser ud til at service %1$s ikke kører: '%2$s'."
+
+#: lib/plugins/ssh_diskspace.rb:18 lib/plugins/ssh_file_exists.rb:18
+msgid "Path"
+msgstr ""
+
+#: lib/plugins/ssh_diskspace.rb:52
+msgid "Error in result from the server."
+msgstr "Fejl i resultatet fra serveren."
+
+#: lib/plugins/http.rb:11
+msgid "Get address"
+msgstr "Get adresse"
+
+#: lib/plugins/http.rb:17
+msgid "Timeout"
+msgstr "Timeout"
+
+#: lib/plugins/http.rb:21
+msgid "HTML regex match"
+msgstr "HTM regex match"
+
+#: lib/plugins/http.rb:47
+msgid "Could not match the following regex: '%1$s'."
+msgstr "Kunne ikke matche ved følgende regex: '%1$s'."
+
+#: lib/plugins/ssh_file_exists.rb:21
+msgid "Filename regex"
+msgstr "Filnavn regex"
+
+#: lib/plugins/ssh_file_exists.rb:24
+msgid "Replaces"
+msgstr "Erstatninger"
+
+#: lib/plugins/ssh_file_exists.rb:27
+msgid "%Y will be replaced by 4-digit year."
+msgstr ""
+
+#: lib/plugins/ssh_file_exists.rb:28
+msgid "%m will be replaced by 2-digit month."
+msgstr ""
+
+#: lib/plugins/ssh_file_exists.rb:29
+msgid "%d will be replaced by 2-digit date."
+msgstr ""
+
+#: lib/plugins/ssh_file_exists.rb:30
+msgid "%yday will be replaced by 2-digit of yesterdays date."
+msgstr ""
+
+#: lib/plugins/ssh_file_exists.rb:74
+msgid "Nothing was matched from regex: '%s'."
+msgstr "Der blev ikke fundet noget fra regex: '%s'."
+
+#: lib/plugins/ssh_ftp.rb:4
+msgid "SSH hostname"
+msgstr "SSH hostnavn"
+
+#: lib/plugins/ssh_ftp.rb:7
+msgid "SSH port"
+msgstr "SSH port"
+
+#: lib/plugins/ssh_ftp.rb:11
+msgid "SSH username"
+msgstr "SSH brugernavn"
+
+#: lib/plugins/ssh_ftp.rb:15
+msgid "SSH password"
+msgstr "SSH adgangskode"
+
+#: lib/plugins/ssh_ftp.rb:18
+msgid "FTP hostname"
+msgstr "FTP hostnavn"
+
+#: lib/plugins/ssh_ftp.rb:21
+msgid "FTP port"
+msgstr "FTP port"
+
+#: lib/plugins/ssh_ftp.rb:24
+msgid "FTP username"
+msgstr "FTP brugernavn"
+
+#: lib/plugins/ssh_ftp.rb:27
+msgid "FTP password"
+msgstr "FTP adgangskode"
+
+#: app/controllers/services_controller.rb:45
+msgid "An error occurred: %{message}"
+msgstr "Der opstod en fejl: %{message}"
+
+#: app/helpers/menus_helper.rb:5 app/views/dashboard/index.html.haml:1
+msgid "Dashboard"
+msgstr ""
+
+#: app/helpers/menus_helper.rb:6
+msgid "Log out"
+msgstr "Log ud"
+
+#: app/helpers/menus_helper.rb:10
+msgid "Log in"
+msgstr "Log ind"
+
+#: app/views/groups/_form.html.haml:1
+#: app/views/group_reporters/_form.html.haml:1
+#: app/views/reporters/_form.html.haml:1 app/views/services/_form.html.haml:1
+msgid "Details"
+msgstr "Detaljer"
+
+#: app/views/groups/_form.html.haml:4
+#: app/views/group_reporters/_form.html.haml:4
+#: app/views/reporters/_form.html.haml:12
+#: app/views/services/_form.html.haml:14
+msgid "Save"
+msgstr "Gem"
+
+#: app/views/groups/_form.html.haml:7 app/views/reporters/_form.html.haml:15
+#: app/views/services/_form.html.haml:17
+msgid "Show"
+msgstr "Vis"
+
+#: app/views/groups/_form.html.haml:8 app/views/reporters/_form.html.haml:16
+#: app/views/services/_form.html.haml:18
+msgid "Delete"
+msgstr "Slet"
+
+#: app/views/groups/_form.html.haml:8 app/views/groups/show.html.haml:39
+#: app/views/reporters/_form.html.haml:16
+#: app/views/services/_form.html.haml:18 app/views/dashboard/index.html.haml:4
+msgid "Are you sure?"
+msgstr "Er du sikker?"
+
+#: app/views/groups/edit.html.haml:1
+msgid "Edit group: %{name}"
+msgstr "Rediger gruppe: %{name}"
+
+#: app/views/groups/show.html.haml:1
+msgid "Show group: %{name}"
+msgstr "Vis gruppe: %{name}"
+
+#: app/views/groups/show.html.haml:4
+msgid "Edit group"
+msgstr "Rediger gruppe"
+
+#: app/views/groups/show.html.haml:6
+msgid "Services"
+msgstr "Services"
+
+#: app/views/groups/show.html.haml:8
+msgid "Add service"
+msgstr "Tilføj service"
+
+#: app/views/groups/show.html.haml:21
+msgid "No services were found."
+msgstr "Der blev ikke fundet nogle services."
+
+#: app/views/groups/show.html.haml:29
+msgid "Add reporter"
+msgstr "Tilføj reporter"
+
+#: app/views/groups/show.html.haml:34 app/views/dashboard/index.html.haml:3
+msgid "Actions"
+msgstr "Muligheder"
+
+#: app/views/groups/show.html.haml:39
+msgid "Remove"
+msgstr "Fjern"
+
+#: app/views/groups/show.html.haml:43
+msgid "No reporters has been added to this group."
+msgstr "Der blev ikke fundet nogle reporters på denne gruppe."
+
+#: app/views/groups/new.html.haml:1
+msgid "Add new group"
+msgstr "Tilføj ny gruppe"
+
+#: app/views/group_reporters/new.html.haml:1
+msgid "New group-reporter"
+msgstr "Ny gruppereporter"
+
+#: app/views/public_activities/_table.html.haml:1
+msgid "Logs"
+msgstr "Logs"
+
+#: app/views/public_activities/_table.html.haml:5
+msgid "ID"
+msgstr "ID"
+
+#: app/views/public_activities/_table.html.haml:6
+msgid "Key"
+msgstr "Nøgle"
+
+#: app/views/public_activities/_table.html.haml:7
+msgid "Message"
+msgstr "Besked"
+
+#: app/views/public_activities/_table.html.haml:8
+msgid "Date"
+msgstr "Dato"
+
+#: app/views/public_activities/_table.html.haml:21
+msgid "No logs has been saved for this reporter."
+msgstr "Der blev ikke fundet nogle logs for denne reporter."
+
+#: app/views/reporters/_form.html.haml:7 app/views/services/_form.html.haml:9
+msgid "Plugin parameters"
+msgstr "Plugin parametre"
+
+#: app/views/reporters/edit.html.haml:1
+msgid "Edit reporter: %{name}"
+msgstr "Rediger reporter: %{name}"
+
+#: app/views/reporters/show.html.haml:1
+msgid "Show reporter: %{name}"
+msgstr "Vis reporter: %{name}"
+
+#: app/views/reporters/show.html.haml:4
+msgid "Edit reporter"
+msgstr "Rediger reporter"
+
+#: app/views/reporters/new.html.haml:1
+msgid "New reporter"
+msgstr "Vis reporter"
+
+#: app/views/services/edit.html.haml:1
+msgid "Edit service: %{name}"
+msgstr "Rediger service: %{name}"
+
+#: app/views/services/show.html.haml:1
+msgid "View service: %{name}"
+msgstr "Vis service: %{name}"
+
+#: app/views/services/show.html.haml:4
+msgid "Edit service"
+msgstr "Rediger service"
+
+#: app/views/services/show.html.haml:5
+msgid "Check"
+msgstr "Check"
+
+#: app/views/services/show.html.haml:7
+msgid "Information"
+msgstr "Information"
+
+#: app/views/services/show.html.haml:18
+msgid "Yes"
+msgstr "Ja"
+
+#: app/views/services/show.html.haml:18
+msgid "No"
+msgstr "Nej"
+
+#: app/views/services/new.html.haml:1
+msgid "New service"
+msgstr "Ny service"
+
+#: app/views/dashboard/index.html.haml:4
+msgid "Check all services"
+msgstr "Check alle services"
+
+#: app/views/dashboard/index.html.haml:11
+msgid "Failed services!"
+msgstr "Fejlet services"
+
+#: app/views/dashboard/index.html.haml:28
+#: app/views/dashboard/index.html.haml:48
+msgid "Add new"
+msgstr "Tilføj ny"
+
+#: app/views/dashboard/index.html.haml:40
+msgid "No groups was found."
+msgstr "Der blev ikke fundet nogle grupper."
+
+#: app/views/dashboard/index.html.haml:60
+msgid "No reporters has been added."
+msgstr "Der er ikke tilføjet nogle reportere."

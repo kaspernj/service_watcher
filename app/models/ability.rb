@@ -11,6 +11,7 @@ private
   
   def role_administrator
     can :manage, Group
+    can :manage, GroupReporter
     can :manage, Plugin
     can :manage, Reporter
     can :manage, Service

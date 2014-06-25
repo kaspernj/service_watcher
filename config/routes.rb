@@ -3,12 +3,17 @@ ServiceWatcher::Application.routes.draw do
   
   namespace :dashboard do
     get :index
+    post :check_all
   end
   
-  resources :groups
+  resources :groups do
+    resources :group_reporters
+    resources :services do
+      post :check, :on => :member
+    end
+  end
   resources :plugins
   resources :reporters
-  resources :services
   resources :users
   
   root 'dashboard#index'

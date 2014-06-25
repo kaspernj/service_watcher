@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140624091726) do
+ActiveRecord::Schema.define(version: 20140625065049) do
 
   create_table "activities", force: true do |t|
     t.integer  "trackable_id"
@@ -63,12 +63,22 @@ ActiveRecord::Schema.define(version: 20140624091726) do
     t.datetime "updated_at"
   end
 
-  create_table "reporters", force: true do |t|
+  create_table "reporter_plugins", force: true do |t|
     t.string   "name"
-    t.string   "plugin"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "reporter_plugins", ["name"], name: "index_reporter_plugins_on_name", using: :btree
+
+  create_table "reporters", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "reporter_plugin_id"
+  end
+
+  add_index "reporters", ["reporter_plugin_id"], name: "index_reporters_on_reporter_plugin_id", using: :btree
 
   create_table "service_reporters", force: true do |t|
     t.integer  "service_id"
@@ -82,16 +92,19 @@ ActiveRecord::Schema.define(version: 20140624091726) do
 
   create_table "services", force: true do |t|
     t.string   "name"
-    t.string   "plugin"
     t.integer  "timeout"
     t.datetime "last_run_at"
     t.integer  "group_id"
+    t.boolean  "active"
     t.boolean  "failed"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "plugin_id"
   end
 
+  add_index "services", ["active"], name: "index_services_on_active", using: :btree
   add_index "services", ["group_id"], name: "index_services_on_group_id", using: :btree
+  add_index "services", ["plugin_id"], name: "index_services_on_plugin_id", using: :btree
 
   create_table "user_roles", force: true do |t|
     t.integer  "user_id"

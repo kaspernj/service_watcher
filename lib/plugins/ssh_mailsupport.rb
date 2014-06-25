@@ -1,4 +1,4 @@
-class Service_watcher::Plugin::Ssh_mailsupport < Service_watcher::Plugin
+class ServiceWatcherPlugin::SshMilsupport
   def self.paras
     return [{
       "title" => _("Hostname"),

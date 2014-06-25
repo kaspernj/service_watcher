@@ -1,9 +1,11 @@
+- content_for(:header_title){ _("Show group: %{name}", :name => @group.name) }
+
 %div{style: "padding-bottom: 15px;"}
   = link_to _("Edit group"), edit_group_path(@group), :class => "button"
 
 = DesignBox.boxt(_("Services"), 350)
 %div{style: "padding-bottom: 15px;"}
-  = link_to _("Add service"), new_service_path(:service => {:group_id => @group})
+  = link_to _("Add service"), new_group_service_path(@group), :class => "button"
 
 %table.list
   %thead
@@ -24,7 +26,7 @@
 
 = DesignBox.boxt Reporter.model_name.human(:count => 2), 350
 %div{style: "padding-bottom: 15px;"}
-  = link_to _("Add reporter"), new_reporter_path(:reporter => {:group_id => @group}), :class => "button"
+  = link_to _("Add reporter"), new_group_group_reporter_path(@group, :group_reporter => {:group_id => @group}), :class => "button"
 %table.list
   %thead
     %tr
@@ -34,7 +36,7 @@
     - @group.group_reporters.each do |group_reporter|
       %tr
         %td= link_to_reporter group_reporter.reporter
-        %td= link_to _("Remove"), group_reporter_path(group_reporter), :method => :delete, :data => {:confirm => _("Are you sure?")}
+        %td= link_to _("Remove"), group_group_reporter_path(@group, group_reporter), :method => :delete, :data => {:confirm => _("Are you sure?")}
     - if @group.reporters.none?
       %tr
         %td.error{colspan: 2}

@@ -1,4 +1,4 @@
-class Service_watcher::Plugin::Ssh_service < Service_watcher::Plugin
+class ServiceWatcherPlugin::SshService
 	def self.paras
 		return [
 			{

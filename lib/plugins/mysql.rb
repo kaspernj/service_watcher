@@ -1,4 +1,4 @@
-class Service_watcher::Plugin::Mysql < Service_watcher::Plugin
+class ServiceWatcherPlugin::Mysql
 	def self.paras
 		return [{
       "title" => _("Hostname"),

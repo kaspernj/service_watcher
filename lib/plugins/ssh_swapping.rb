@@ -1,4 +1,4 @@
-class Service_watcher::Plugin::Ssh_swapping < Service_watcher::Plugin
+class ServiceWatcherPlugin::SshSwapping
   def self.paras
     return [{
       "title" => _("Hostname"),

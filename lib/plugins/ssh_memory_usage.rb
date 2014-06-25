@@ -1,4 +1,4 @@
-class Service_watcher::Plugin::Ssh_memory_usage < Service_watcher::Plugin
+class ServiceWatcherPlugin::SshMemoryUsage
 	def self.paras
 		return [{
 			"title" => _("Hostname"),

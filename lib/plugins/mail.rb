@@ -1,4 +1,4 @@
-class Service_watcher::Plugin::Mail < Service_watcher::Plugin
+class ServiceWatcherPlugin::Mail
 	def self.paras
 		return [{
       "title" => _("Host"),

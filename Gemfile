@@ -13,6 +13,14 @@ gem 'cancan'
 gem 'simple_form'
 gem 'string-cases'
 gem 'public_activity'
+gem 'tretry'
+
+# Plugin deps
+gem 'knjrbfw'
+gem 'net-ssh'
+
+# For automatic handeling of cron.
+gem 'whenever', :require => false
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
@@ -27,4 +35,4 @@ group :development, :test do
 end
 
 # Use Capistrano for deployment
-# gem 'capistrano', group: :development
+gem 'capistrano', group: :development

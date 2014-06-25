@@ -1,4 +1,4 @@
-class Service_watcher::Plugin::Ssh_file_exists < Service_watcher::Plugin
+class ServiceWatcherPlugin::SshFileExists
   def self.paras
     return [{
       "title" => _("Hostname"),

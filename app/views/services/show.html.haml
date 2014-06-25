@@ -1,38 +1,24 @@
-- content_for(:header_title){ sprintf(_("View service: %s"), service.name.html) }
+- content_for(:header_title){ _("View service: %{name}", :name => @service.name) }
 
 %div{style: "padding-bottom: 15px;"}
-  %input{onclick: "location.href='/?s=service_edit&service_id=#{service.id}';", type: "button", value: _"Edit service"}/
-= DesignBox.boxt(_("Information"), 350)
+  = link_to _("Edit service"), ["edit", @group, @service], :class => "button" if can? :edit, @service
+  = link_to _("Check"), check_group_service_path(@group, @service), :class => "button", :method => :post if can? :run_check, @service
+  
+= DesignBox.boxt _("Information"), 350
 %table.form
-  - print _hb.inputs({
-  - :title => _("Group"),
-  - :type => :info,
-  - :value => service.group_html,
-  - :descr => _("The group that this service belongs to.")
-  - })
-= _site.boxb
-%br/
-= _site.boxt(_("Logs"), "100%")
-%table.list
-  %thead
-    %tr
-      %th= _"ID"
-      %th= _"Message"
-      %th= _"Date"
   %tbody
-    - count = 0
-    - _ob.list(:Log, {"object_lookup" => service, "limit" => 100, "orderby" => [["date_saved", "desc"]]}) do |log|
-    - count += 1
-      %tr
-        %td
-          = log.id
-        %td
-          = log[:text].html
-        %td
-          = log[:date_saved_str].html
-    - end
-    - if count <= 0
-      %tr
-        %td.error{colspan: "2"}
-          = _"No logs has been saved for this service."
-= _site.boxb
+    %tr
+      %td= Service.human_attribute_name(:name)
+      %td= @service.name
+    %tr
+      %td= Service.human_attribute_name(:group)
+      %td= link_to_group @service.group
+    %tr
+      %td= Service.human_attribute_name(:active)
+      %td= @service.active? ? _("Yes") : _("No")
+= DesignBox.boxb
+
+%br/
+%br/
+
+= render "/public_activities/table", :resource => @service

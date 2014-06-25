@@ -3,6 +3,7 @@
   %thead
     %tr
       %th= _("ID")
+      %th= _("Key")
       %th= _("Message")
       %th= _("Date")
   %tbody
@@ -10,6 +11,9 @@
       %tr
         %td= activity.id
         %td= activity.key
+        %td
+          - if activity.key == "service.check.unsuccessful"
+            = activity.parameters[:message]
         %td= l(activity.created_at, :format => :long)
     - if resource.activities.none?
       %tr

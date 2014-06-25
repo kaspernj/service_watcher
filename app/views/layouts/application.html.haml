@@ -22,6 +22,7 @@
           %td.main_content
             %h1= header_title
             
+            - flash.each do |type, message|
+              .flash{:class => "flash-#{type}"}= message
+            
             = yield
-        %tr
-          %td Bottom

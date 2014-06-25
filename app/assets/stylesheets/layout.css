@@ -77,13 +77,19 @@ div.box_title{
   padding-bottom: 5px;
 }
 
-input[type=submit], input[type=button]{
+input[type=submit], input[type=button], .button{
   border: 1px solid #989898;
   border-radius: 3px;
   background-color: #ececec;
   color: #000000;
   padding: 4px 8px 4px 8px;
   font-size: 12px;
+}
+
+a:link.button, a:visited.button, a:hover.button, a:active.button {
+  color: black;
+  cursor: default;
+  text-decoration: none;
 }
 
 table.form, table.list{

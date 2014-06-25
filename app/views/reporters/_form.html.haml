@@ -1,6 +1,17 @@
 = DesignBox.boxt _("Details"), 350
 = simple_form_for @reporter do |f|
   = f.input :name
-  = f.input :plugin, :collection => Plugin.order(:name)
+  = f.input :reporter_plugin_id, :collection => ReporterPlugin.order(:name)
+  
+  - unless @reporter.new_record?
+    %h2= _("Plugin parameters")
+    = simple_fields_for :parameters do |f|
+      - @reporter.parameters.each do |parameter|
+        = f.input parameter["name"], :label => parameter["title"], :required => false, :input_html => {:value => parameter["value"]}
+  
   = f.submit _("Save")
+  
+  - unless @reporter.new_record?
+    = link_to _("Show"), @reporter, :class => "button"
+    = link_to _("Delete"), @reporter, :class => "button", :method => :delete, :data => {:confirm => _("Are you sure?")}
 = DesignBox.boxb
