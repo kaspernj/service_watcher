@@ -26,6 +26,6 @@ module ServiceWatcher
     config.i18n.default_locale = :en
     config.i18n.available_locales = [:da, :en]
     
-    config.autoload_paths += Dir["#{config.root}/lib/**/"]
+    config.autoload_paths += Dir["#{config.root}/lib/"]
   end
 end
