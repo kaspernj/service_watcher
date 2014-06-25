@@ -6,6 +6,9 @@ class ServiceWatcherReporterPlugin::Mailer
     }]
   end
   
-  def execute
+  def self.report(args)
+    service = args[:service]
+    email = args[:args]["txtemail"]
+    ::ReporterMailer.report(email, service).deliver!
   end
 end

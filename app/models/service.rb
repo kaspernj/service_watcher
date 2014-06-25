@@ -54,12 +54,20 @@ class Service < ActiveRecord::Base
         plugin.plugin_class.check(args)
       end
     rescue => e
+      error = e
       failed = true
       update_attribute(:failed, true) unless failed
       create_activity :key => "service.check.unsuccessful", :parameters => {:message => e.message, :backtrace => e.backtrace}
     end
     
     if failed
+      group.reporters.each do |reporter|
+        reporter.report(
+          :service => self,
+          :error => e
+        )
+      end
+      
       return false
     else
       update_attribute(:failed, false) if failed
