@@ -55,14 +55,14 @@ class Service < ActiveRecord::Base
       end
     rescue => e
       failed = true
-      update_attribute(:failed, true)
+      update_attribute(:failed, true) unless failed
       create_activity :key => "service.check.unsuccessful", :parameters => {:message => e.message, :backtrace => e.backtrace}
     end
     
     if failed
       return false
     else
-      update_attribute(:failed, false)
+      update_attribute(:failed, false) if failed
       create_activity :key => "service.check.successful"
       return true
     end
