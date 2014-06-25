@@ -34,10 +34,18 @@ set :linked_files, %w{config/database.yml}
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
-# require 'whenever/capistrano'
+# Whenever config used to update cron to run checks.
+set :whenever_roles,        ->{ :db }
+set :whenever_command,      ->{ [:bundle, :exec, :whenever] }
+set :whenever_command_environment_variables, ->{ {} }
+set :whenever_identifier,   ->{ fetch :application }
+set :whenever_environment,  ->{ fetch :rails_env, "production" }
+set :whenever_variables,    ->{ "environment=#{fetch :whenever_environment}" }
+set :whenever_update_flags, ->{ "--update-crontab #{fetch :whenever_identifier} --set #{fetch :whenever_variables}" }
+set :whenever_clear_flags,  ->{ "--clear-crontab #{fetch :whenever_identifier}" }
+require 'whenever/capistrano'
 
 namespace :deploy do
-
   desc 'Restart application'
   task :restart do
     on roles(:web), in: :sequence, wait: 5 do
@@ -61,5 +69,4 @@ namespace :deploy do
       end
     end
   end
-
 end
