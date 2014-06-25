@@ -32,7 +32,9 @@ end
 
 group :development, :test do
   gem 'rspec-rails'
+  
+  # Use Capistrano for deployment
+  gem 'capistrano'
+  gem 'capistrano-rails'
+  gem 'capistrano-bundler'
 end
-
-# Use Capistrano for deployment
-gem 'capistrano', group: :development
