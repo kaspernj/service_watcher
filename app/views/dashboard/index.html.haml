@@ -1,0 +1,61 @@
+- content_for(:header_title){ _("Dashboard") }
+
+= DesignBox.boxt _("Actions"), 350
+= link_to _("Check all services"), dashboard_check_all_path, :class => "button", :method => :post, :data => {:confirm => _("Are you sure?")}
+= DesignBox.boxb
+
+%br/
+%br/
+
+- if failed_services.any?
+  = DesignBox.boxt(_("Failed services!"), 350)
+  %table.list
+    %thead
+      %tr
+        %th= Service.model_name.human
+        %th= Group.model_name.human
+    %tbody
+      - failed_services.each do |service|
+        %tr
+          %td= link_to_service service
+          %td= link_to_group service.group
+  = DesignBox.boxb
+  %br/
+  %br/
+
+= DesignBox.boxt(Group.model_name.human(:count => 2), 350)
+%div{style: "padding-bottom: 15px;"}
+  = link_to _("Add new"), new_group_path, :class => "button"
+%table.list
+  %thead
+    %tr
+      %th= Group.model_name.human
+  %tbody
+    - Group.find_each do |group|
+      %tr
+        %td= link_to_group group
+    - if Group.all.none?
+      %tr
+        %td.error{colspan: 1}
+          = _("No groups was found.")
+= DesignBox.boxb
+
+%br/
+%br/
+
+= DesignBox.boxt(Reporter.model_name.human(:count => 2), 350)
+%div{style: "padding-bottom: 15px;"}
+  = link_to _("Add new"), new_reporter_path, :class => "button"
+%table.list
+  %thead
+    %tr
+      %th= Reporter.model_name.human
+  %tbody
+    - Reporter.find_each do |reporter|
+      %tr
+        %td= link_to_reporter reporter
+    - if Reporter.all.none?
+      %tr
+        %td.error{colspan: 1}
+          = _("No reporters has been added.")
+= DesignBox.boxb

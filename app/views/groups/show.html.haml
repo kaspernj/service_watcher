@@ -1,0 +1,44 @@
+- content_for(:header_title){ _("Show group: %{name}", :name => @group.name) }
+
+%div{style: "padding-bottom: 15px;"}
+  = link_to _("Edit group"), edit_group_path(@group), :class => "button"
+
+= DesignBox.boxt(_("Services"), 350)
+%div{style: "padding-bottom: 15px;"}
+  = link_to _("Add service"), new_group_service_path(@group), :class => "button"
+
+%table.list
+  %thead
+    %tr
+      %th= Service.model_name.human
+  %tbody
+    - @group.services.order(:name).each do |service|
+      %tr
+        %td= link_to_service service
+    - if @group.services.none?
+      %tr
+        %td.error{colspan: 1}
+          = _("No services were found.")
+= DesignBox.boxb
+
+%br/
+%br/
+
+= DesignBox.boxt Reporter.model_name.human(:count => 2), 350
+%div{style: "padding-bottom: 15px;"}
+  = link_to _("Add reporter"), new_group_group_reporter_path(@group, :group_reporter => {:group_id => @group}), :class => "button"
+%table.list
+  %thead
+    %tr
+      %th= Reporter.model_name.human
+      %th= _("Actions")
+  %tbody
+    - @group.group_reporters.each do |group_reporter|
+      %tr
+        %td= link_to_reporter group_reporter.reporter
+        %td= link_to _("Remove"), group_group_reporter_path(@group, group_reporter), :method => :delete, :data => {:confirm => _("Are you sure?")}
+    - if @group.reporters.none?
+      %tr
+        %td.error{colspan: 2}
+          = _("No reporters has been added to this group.")
+= DesignBox.boxb

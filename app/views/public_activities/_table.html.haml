@@ -1,0 +1,25 @@
+= DesignBox.boxt(_("Logs"), "100%")
+%table.list
+  %thead
+    %tr
+      %th= _("ID")
+      %th= _("Key")
+      %th= _("Message")
+      %th= _("Date")
+  %tbody
+    - resource.activities.order(:id).reverse_order.each do |activity|
+      %tr
+        %td= activity.id
+        %td= activity.key
+        %td
+          - if activity.key == "service.check.unsuccessful"
+            = activity.parameters[:message]
+        %td= l(activity.created_at, :format => :long)
+    - if resource.activities.none?
+      %tr
+        %td.error{colspan: 2}
+          = _("No logs has been saved for this reporter.")
+= DesignBox.boxb
+
+
+  

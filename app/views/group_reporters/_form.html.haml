@@ -1,0 +1,5 @@
+= DesignBox.boxt _("Details"), 350
+= simple_form_for [@group, @group_reporter] do |f|
+  = f.input :reporter_id, :collection => reporter_collection, :label => GroupReporter.human_attribute_name(:reporter)
+  = f.submit _("Save")
+= DesignBox.boxb

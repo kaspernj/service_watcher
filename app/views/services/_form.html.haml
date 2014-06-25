@@ -1,0 +1,19 @@
+= DesignBox.boxt _("Details"), 500
+= simple_form_for [@group, @service] do |f|
+  = f.input :name
+  = f.input :group_id, :collection => Group.order(:name)
+  = f.input :plugin_id, :collection => Plugin.order(:name)
+  = f.input :active
+  
+  - unless @service.new_record?
+    %h2= _("Plugin parameters")
+    = simple_fields_for :parameters do |f|
+      - @service.parameters.each do |parameter|
+        = f.input parameter["name"], :label => parameter["title"], :required => false, :input_html => {:value => parameter["value"]}
+  
+  = f.submit _("Save")
+  
+  - unless @service.new_record?
+    = link_to _("Show"), [@group, @service], :class => "button"
+    = link_to _("Delete"), [@group, @service], :class => "button", :method => :delete, :data => {:confirm => _("Are you sure?")}
+= DesignBox.boxb

@@ -1,0 +1,3 @@
+class PluginsController < ApplicationController
+  
+end
