@@ -58,6 +58,12 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.2.0)
+    factory_girl (4.4.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.4.1)
+      factory_girl (~> 4.4.0)
+      railties (>= 3.0.0)
+    forgery (0.6.0)
     gettext_simple (0.0.9)
     gettext_simple_rails (0.0.16)
       gettext_simple (>= 0.0.9)
@@ -195,6 +201,8 @@ DEPENDENCIES
   capistrano-rails
   coffee-rails (~> 4.0.0)
   devise
+  factory_girl_rails
+  forgery
   gettext_simple_rails (>= 0.0.16)
   haml-rails
   jbuilder (~> 1.2)

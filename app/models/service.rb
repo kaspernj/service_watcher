@@ -6,7 +6,7 @@ class Service < ActiveRecord::Base
   belongs_to :plugin
   
   has_many :options, :as => :resource, :dependent => :destroy
-  has_many :service_reporterlinks, :dependent => :destroy
+  has_many :service_reporter, :dependent => :destroy
   has_many :reporters, :through => :service_reporterlinks
   
   validates_presence_of :name, :plugin, :group
