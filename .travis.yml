@@ -1,0 +1,20 @@
+language: ruby
+rvm:
+  - ruby-1.9.3-p484
+
+notifications:
+  email: false
+
+cache:
+  - bundler
+
+before_script:
+  - mysql -e 'create database myapp_test;'
+  - cp config/database_travis.yml config/database.yml
+  - RAILS_ENV=test bundle exec rake db:migrate
+
+addons:
+  code_climate:
+    repo_token: 2befff150b186f0d8c28496e74d76817c2ab9903a2a876dab54814b0532a20aa
+
+script: "bundle exec rspec --format progress"
