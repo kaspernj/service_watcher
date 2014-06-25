@@ -40,3 +40,5 @@ group :development, :test do
   gem 'capistrano-rails'
   gem 'capistrano-bundler'
 end
+
+gem "codeclimate-test-reporter", group: :test, require: nil
