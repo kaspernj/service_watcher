@@ -11,13 +11,15 @@
   %thead
     %tr
       %th= Service.model_name.human
+      %th= Service.human_attribute_name(:failed)
   %tbody
     - @group.services.order(:name).each do |service|
       %tr
         %td= link_to_service service
+        %td= service.failed? ? _("Yes") : _("No")
     - if @group.services.none?
       %tr
-        %td.error{colspan: 1}
+        %td.error{:colspan => 2}
           = _("No services were found.")
 = DesignBox.boxb
 
