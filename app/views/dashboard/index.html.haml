@@ -24,7 +24,7 @@
   %br/
 
 = DesignBox.boxt(Group.model_name.human(:count => 2), 350)
-%div{style: "padding-bottom: 15px;"}
+.bottom_margin
   = link_to _("Add new"), new_group_path, :class => "button"
 %table.list
   %thead
@@ -44,7 +44,7 @@
 %br/
 
 = DesignBox.boxt(Reporter.model_name.human(:count => 2), 350)
-%div{style: "padding-bottom: 15px;"}
+.bottom_margin
   = link_to _("Add new"), new_reporter_path, :class => "button"
 %table.list
   %thead

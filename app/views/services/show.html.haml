@@ -1,6 +1,6 @@
 - content_for(:header_title){ _("View service: %{name}", :name => @service.name) }
 
-%div{style: "padding-bottom: 15px;"}
+.bottom_margin
   = link_to _("Edit service"), ["edit", @group, @service], :class => "button" if can? :edit, @service
   = link_to _("Check"), check_group_service_path(@group, @service), :class => "button", :method => :post if can? :run_check, @service
   

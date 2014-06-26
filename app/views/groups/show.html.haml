@@ -1,10 +1,10 @@
 - content_for(:header_title){ _("Show group: %{name}", :name => @group.name) }
 
-%div{style: "padding-bottom: 15px;"}
+.bottom_margin
   = link_to _("Edit group"), edit_group_path(@group), :class => "button"
 
 = DesignBox.boxt(_("Services"), 350)
-%div{style: "padding-bottom: 15px;"}
+.bottom_margin
   = link_to _("Add service"), new_group_service_path(@group), :class => "button"
 
 %table.list
@@ -27,7 +27,7 @@
 %br/
 
 = DesignBox.boxt Reporter.model_name.human(:count => 2), 350
-%div{style: "padding-bottom: 15px;"}
+.bottom_margin
   = link_to _("Add reporter"), new_group_group_reporter_path(@group, :group_reporter => {:group_id => @group}), :class => "button"
 %table.list
   %thead

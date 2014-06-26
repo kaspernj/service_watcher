@@ -1,6 +1,6 @@
 - content_for(:header_title){ _("Show reporter: %{name}", :name => @reporter.name) }
 
-%div{style: "padding-bottom: 15px;"}
+.bottom_margin
   = link_to _("Edit reporter"), edit_reporter_path(@reporter), :class => "button" if can? :edit, @reporter
 
 = render "/public_activities/table", :resource => @reporter
