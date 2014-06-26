@@ -11,4 +11,5 @@
  *= require_self
  *= require flash
  *= require layout
+ *= require simple_form
  */
