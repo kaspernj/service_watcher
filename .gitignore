@@ -16,5 +16,6 @@
 /tmp
 
 /config/database.yml
+/config/smtp.yml
 /config/deploy/production.rb
 /config/deploy/staging.rb

@@ -1,0 +1,8 @@
+address: 'smtpserver.com'
+port: 587
+domain: 'smtpserver.com'
+user_name: 'username'
+password: 'password'
+authentication: 'plain'
+enable_starttls_auto: true
+from: fromadress@example.com
