@@ -46,33 +46,45 @@ class Service < ActiveRecord::Base
       args[parameter["name"]] = parameter["value"]
     end
     
-    timeout = timeout || 60
-    failed = false
-    
     begin
-      Timeout.timeout timeout do
+      Timeout.timeout(timeout || 60) do
         plugin.plugin_class.check(args)
       end
-    rescue => e
-      error = e
-      failed = true
-      update_attribute(:failed, true) unless failed
-      create_activity :key => "service.check.unsuccessful", :parameters => {:message => e.message, :backtrace => e.backtrace}
-    end
-    
-    if failed
-      group.reporters.each do |reporter|
-        reporter.report(
-          :service => self,
-          :error => e
-        )
-      end
       
-      return false
-    else
-      update_attribute(:failed, false) if failed
+      set_up_again
       create_activity :key => "service.check.successful"
       return true
+    rescue => e
+      set_failed(e)
+      create_activity :key => "service.check.unsuccessful", :parameters => {:message => e.message, :backtrace => e.backtrace}
+      return false
+    end
+  end
+  
+private
+  
+  def set_failed(error)
+    return if failed?
+    
+    update_attribute(:failed, true)
+    
+    group.reporters.each do |reporter|
+      reporter.report_failed(
+        :service => self,
+        :error => error
+      )
+    end
+  end
+  
+  def set_up_again
+    return unless failed?
+    
+    update_attribute(:failed, false) if failed?
+    
+    group.reporters.each do |reporter|
+      reporter.report_up_again(
+        :service => self
+      )
     end
   end
 end

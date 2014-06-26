@@ -6,9 +6,15 @@ class ServiceWatcherReporterPlugin::Mailer
     }]
   end
   
-  def self.report(args)
+  def self.report_failed(args)
     service = args[:service]
     email = args[:args]["txtemail"]
-    ::ReporterMailer.report(email, service).deliver!
+    ::ReporterMailer.report_failed(email, service).deliver!
+  end
+  
+  def self.report_up_again(args)
+    service = args[:service]
+    email = args[:args]["txtemail"]
+    ::ReporterMailer.report_up_again(email, service).deliver!
   end
 end
