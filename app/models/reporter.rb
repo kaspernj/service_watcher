@@ -23,4 +23,22 @@ class Reporter < ActiveRecord::Base
     
     return parameters
   end
+  
+  def report_failed(args)
+    plugin_args = {}
+    parameters.each do |parameter|
+      plugin_args[parameter["name"]] = parameter["value"]
+    end
+    
+    reporter_plugin.plugin_class.report_failed(:reporter => self, :service => args[:service], :args => plugin_args)
+  end
+  
+  def report_up_again(args)
+    plugin_args = {}
+    parameters.each do |parameter|
+      plugin_args[parameter["name"]] = parameter["value"]
+    end
+    
+    reporter_plugin.plugin_class.report_up_again(:reporter => self, :service => args[:service], :args => plugin_args)
+  end
 end
