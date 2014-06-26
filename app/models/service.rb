@@ -46,6 +46,8 @@ class Service < ActiveRecord::Base
       args[parameter["name"]] = parameter["value"]
     end
     
+    update_attribute :last_run_at, Time.zone.now
+    
     begin
       Timeout.timeout(timeout || 60) do
         plugin.plugin_class.check(args)
