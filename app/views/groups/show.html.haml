@@ -3,7 +3,7 @@
 .bottom_margin
   = link_to _("Edit group"), edit_group_path(@group), :class => "button"
 
-= DesignBox.boxt(_("Services"), 350)
+= DesignBox.boxt _("Services"), 450
 .bottom_margin
   = link_to _("Add service"), new_group_service_path(@group), :class => "button"
 
@@ -11,22 +11,26 @@
   %thead
     %tr
       %th= Service.model_name.human
+      %th= Service.human_attribute_name(:active)
+      %th= Service.human_attribute_name(:last_run_at)
       %th= Service.human_attribute_name(:failed)
   %tbody
     - @group.services.order(:name).each do |service|
       %tr
         %td= link_to_service service
+        %td= service.active? ? _("Yes") : _("No")
+        %td= l(service.last_run_at, :format => :short) if service.last_run_at
         %td= service.failed? ? _("Yes") : _("No")
     - if @group.services.none?
       %tr
-        %td.error{:colspan => 2}
+        %td.error{:colspan => 4}
           = _("No services were found.")
 = DesignBox.boxb
 
 %br/
 %br/
 
-= DesignBox.boxt Reporter.model_name.human(:count => 2), 350
+= DesignBox.boxt Reporter.model_name.human(:count => 2), 450
 .bottom_margin
   = link_to _("Add reporter"), new_group_group_reporter_path(@group, :group_reporter => {:group_id => @group}), :class => "button"
 %table.list

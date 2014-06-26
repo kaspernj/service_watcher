@@ -16,6 +16,12 @@
     %tr
       %td= Service.human_attribute_name(:active)
       %td= @service.active? ? _("Yes") : _("No")
+    %tr
+      %td= Service.human_attribute_name(:last_run_at)
+      %td= l(@service.last_run_at, :format => :long) if @service.last_run_at
+    %tr
+      %td= Service.human_attribute_name(:failed)
+      %td= @service.failed? ? _("Yes") : _("No")
 = DesignBox.boxb
 
 %br/
