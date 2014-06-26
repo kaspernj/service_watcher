@@ -1,0 +1,22 @@
+.flash {
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 12px;
+  margin-bottom: 15px;
+  
+  &.flash-error, &.flash-alert {
+    background-color: #ffd2d3;
+    border-color: #df8f90;
+  }
+  
+  &.flash-warning {
+    background-color: #fefccb;
+    border-color: #e5db55;
+  }
+  
+  &.flash-notice {
+    background-color: #d4ffcd;
+    border-color: #9adf8f;
+  }
+}
