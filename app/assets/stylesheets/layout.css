@@ -50,6 +50,12 @@ td.main_menu > a:active, td.main_menu > a:hover{
   color: #04516d;
 }
 
+td.main_bottom {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
 a:link, a:visited{
   text-decoration: none;
   color: #0f2470;

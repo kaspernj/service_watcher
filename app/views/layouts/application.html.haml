@@ -26,3 +26,7 @@
               .flash{:class => "flash-#{type}"}= message
             
             = yield
+        %tr
+          %td.main_bottom
+            = form_for :locale, :method => :post, :url => locales_path do |f|
+              = select_tag :locale, options_for_select(locales_collection, I18n.locale)

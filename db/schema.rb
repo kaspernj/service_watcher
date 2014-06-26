@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140625065049) do
+ActiveRecord::Schema.define(version: 20140626080323) do
 
   create_table "activities", force: true do |t|
     t.integer  "trackable_id"
@@ -73,9 +73,9 @@ ActiveRecord::Schema.define(version: 20140625065049) do
 
   create_table "reporters", force: true do |t|
     t.string   "name"
+    t.integer  "reporter_plugin_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "reporter_plugin_id"
   end
 
   add_index "reporters", ["reporter_plugin_id"], name: "index_reporters_on_reporter_plugin_id", using: :btree
@@ -128,6 +128,7 @@ ActiveRecord::Schema.define(version: 20140625065049) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.string   "locale"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

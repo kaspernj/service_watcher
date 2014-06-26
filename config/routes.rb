@@ -12,6 +12,7 @@ ServiceWatcher::Application.routes.draw do
       post :check, :on => :member
     end
   end
+  resources :locales, :only => :create
   resources :plugins
   resources :reporters
   resources :users
