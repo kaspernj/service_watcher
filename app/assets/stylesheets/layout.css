@@ -10,10 +10,6 @@ body, html, div, td{
   font-size: 12px;
 }
 
-body{
-  background-image: url("/imgs/body_bg.png");
-}
-
 table.main_table{
   width: 1000px;
   height: 100%;
