@@ -7,7 +7,7 @@ class CreateOptions < ActiveRecord::Migration
       t.text :value
       t.timestamps
     end
-    
+
     add_index :options, [:resource_type, :resource_id]
   end
 end

@@ -20,10 +20,10 @@ class ServiceWatcherPlugin::Mysql
       "default" => "mysql"
     }]
   end
-  
+
   def self.check(paras)
     require "mysql2"
-    
+
     begin
       args = {
         :host => paras["txthost"],
@@ -32,7 +32,7 @@ class ServiceWatcherPlugin::Mysql
         :port => paras["txtport"].to_i,
         :symbolize_keys => true
       }
-      
+
       conn = Mysql2::Client.new(args)
       conn.close
     rescue => e

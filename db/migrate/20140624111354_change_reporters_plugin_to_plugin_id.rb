@@ -4,7 +4,7 @@ class ChangeReportersPluginToPluginId < ActiveRecord::Migration
     remove_column :reporters, :plugin
     add_index :reporters, :reporter_plugin_id
   end
-  
+
   def down
     add_column :reporters, :plugin, :string
     remove_column :reporters, :reporter_plugin_id

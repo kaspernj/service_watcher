@@ -10,7 +10,7 @@ module MenusHelper
         (link_to _("Log in"), new_user_session_path)
       ]
     end
-    
+
     return menus
   end
 end

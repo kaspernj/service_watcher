@@ -9,7 +9,7 @@ class CreateServices < ActiveRecord::Migration
       t.boolean :failed
       t.timestamps
     end
-    
+
     add_index :services, :group_id
   end
 end

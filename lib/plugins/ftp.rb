@@ -16,13 +16,13 @@ class ServiceWatcherPlugin::Ftp
       "type" => "password"
     }]
   end
-  
+
   def self.check(paras)
     raise "No arguments given." if paras.length <= 0
     paras["txttimeout"] = 7 if paras["txttimeout"].to_s.length <= 0
-    
+
     require "net/ftp"
-    
+
     begin
       ftp = Net::FTP.new
       ftp.connect(paras["txthost"], paras["txtport"].to_i)

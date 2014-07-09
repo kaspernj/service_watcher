@@ -25,7 +25,7 @@ class ServiceWatcherPlugin::SshService
       }
     ]
   end
-  
+
   def self.check(paras)
     sshrobot = Knj::SSHRobot.new(
       "host" => paras["txthost"],
@@ -33,26 +33,26 @@ class ServiceWatcherPlugin::SshService
       "user" => paras["txtuser"],
       "passwd" => paras["txtpasswd"]
     )
-    
+
     cmd = "service #{Knj::Strings.unixsafe(paras["txtservicename"])} status"
-    
+
     if paras["txtsudopasswd"].to_s.strip.length > 0
       res = sshrobot.sudo_exec(paras["txtsudopasswd"], cmd)
     else
       res = sshrobot.exec(cmd)
     end
-    
+
     res = res.to_s.strip
     result = false
-    
+
     if res =~ /is\s+running\s*$/ or res =~ /is\s+running\s*\(pid\s+(\d+)\)\s*(\.|)\s*$/
       result = true
     end
-    
+
     if !result
       raise sprintf(_("Looks like the service %1$s is not running: '%2$s'."), paras["txtservicename"], res.to_s.strip)
     end
-    
+
     sshrobot.close
   end
 end
