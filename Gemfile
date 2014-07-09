@@ -18,6 +18,7 @@ gem 'tretry'
 # Plugin deps
 gem 'knjrbfw'
 gem 'net-ssh'
+gem 'http2'
 
 # For automatic handeling of cron.
 gem 'whenever', :require => false

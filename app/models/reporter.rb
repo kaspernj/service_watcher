@@ -30,7 +30,7 @@ class Reporter < ActiveRecord::Base
       plugin_args[parameter["name"]] = parameter["value"]
     end
     
-    reporter_plugin.plugin_class.report_failed(:reporter => self, :service => args[:service], :args => plugin_args)
+    reporter_plugin.plugin_class.report_failed(reporter: self, service: args[:service], args: plugin_args, error: args[:error])
   end
   
   def report_up_again(args)
@@ -39,6 +39,6 @@ class Reporter < ActiveRecord::Base
       plugin_args[parameter["name"]] = parameter["value"]
     end
     
-    reporter_plugin.plugin_class.report_up_again(:reporter => self, :service => args[:service], :args => plugin_args)
+    reporter_plugin.plugin_class.report_up_again(reporter: self, service: args[:service], args: plugin_args)
   end
 end
