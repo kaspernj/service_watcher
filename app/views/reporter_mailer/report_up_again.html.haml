@@ -1,5 +1,3 @@
-%p
-  = _("Hello %{email}", :email => @email)
+%p= _("Hello %{email}", email: @email)
 
-%p
-  = _("The service %{service_name} is up again.", :service_name => @service.name)
+%p= _("The service '%{service_name}' in group '%{group_name}' is up again.", service_name: @service.name, group_name: @group.name)

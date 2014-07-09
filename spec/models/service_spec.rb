@@ -19,9 +19,10 @@ describe Service do
       mail = ActionMailer::Base.deliveries.first
       mail.should_not eq nil
       
-      mail.subject.should eq "#{service.name} has failed!"
+      mail.subject.should eq "[#{service.group.name}] #{service.name} has failed!"
       mail.body.to_s.should include "Hello sampleemail@example.com"
-      mail.body.to_s.should include "The service #{service.name} has failed."
+      mail.body.to_s.should include "The service '#{service.name}' in group '#{service.group.name}' has failed."
+      mail.body.to_s.should include "Error message was: No host was given."
     end
     
     it "should not send double mails" do
@@ -35,7 +36,7 @@ describe Service do
     end
     
     it "sends 'up again' emails" do
-      service.update_column(:failed, true)
+      service.update_column :failed, true
       service.check.should eq true
       ActionMailer::Base.deliveries.length.should eq 1
       service.failed?.should eq false
@@ -43,9 +44,9 @@ describe Service do
       mail = ActionMailer::Base.deliveries.first
       mail.should_not eq nil
       
-      mail.subject.should eq "#{service.name} is up again"
+      mail.subject.should eq "[#{service.group.name}] #{service.name} is up again"
       mail.body.to_s.should include "Hello sampleemail@example.com"
-      mail.body.to_s.should include "The service #{service.name} is up again."
+      mail.body.to_s.should include "The service '#{service.name}' in group '#{service.group.name}' is up again."
       
       # Dont send a mail for every check.
       service.check.should eq true

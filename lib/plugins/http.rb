@@ -14,36 +14,26 @@ class ServiceWatcherPlugin::Http
       "title" => _("SSL"),
       "name" => "chessl"
     },{
-      "title" => _("Timeout"),
-      "name" => "txttimeout",
-      "default" => 7
-    },{
       "title" => _("HTML regex match"),
       "name" => "txthtmlregexmatch"
     }]
   end
 
   def self.check(paras)
-    raise "No arguments given." if paras.length <= 0
-    paras["txttimeout"] = 7 if paras["txttimeout"].to_s.length <= 0
+    raise "No arguments given." if paras.empty?
 
-    require "net/http"
-    require "net/https"
+    if paras["chessl"] == "1" || paras["chessl"] == "on"
+      ssl = true
+    else
+      ssl = false
+    end
 
-    Tretry.try(:tries => 3, :wait => 2, :errors => [SocketError, Timeout::Error]) do
-      http = Net::HTTP.new(paras["txthost"], paras["txtport"])
-      http.read_timeout = paras["txttimeout"].to_i
+    Http2.new(host: paras["txthost"], port: paras["txtport"], ssl: ssl) do |http|
+      response = http.get(paras["txtaddr"])
 
-      if paras["chessl"] == "1" or paras["chessl"] == "on"
-        http.use_ssl = true
-        http.verify_mode = OpenSSL::SSL::VERIFY_NONE
-      end
-
-      resp = http.get2("/#{paras["txtaddr"]}")
-
-      if paras["txthtmlregexmatch"].to_s.length > 0
+      if paras["txthtmlregexmatch"].present?
         regex = Knj::Strings.regex(paras["txthtmlregexmatch"])
-        raise sprintf(_("Could not match the following regex: '%1$s'."), paras["txthtmlregexmatch"]) if !regex.match(resp.body)
+        raise _("Could not match the following regex: '%{regex}'.", regex: paras["txthtmlregexmatch"]) unless regex.match(response.body)
       end
     end
   end

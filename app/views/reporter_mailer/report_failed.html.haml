@@ -1,5 +1,8 @@
-%p
-  = _("Hello %{email}", :email => @email)
+%p= _("Hello %{email}", email: @email)
 
-%p
-  = _("The service %{service_name} has failed.", :service_name => @service.name)
+%p= _("The service '%{service_name}' in group '%{group_name}' has failed.", service_name: @service.name, group_name: @group.name)
+
+%p= _("Error message was: %{error_message}", error_message: @error.message)
+
+%p= _("Backtrace")
+= @error.backtrace.join("<br />\n").html_safe

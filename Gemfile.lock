@@ -214,6 +214,7 @@ DEPENDENCIES
   forgery
   gettext_simple_rails (>= 0.0.16)
   haml-rails
+  http2
   jbuilder (~> 1.2)
   jquery-rails
   knjrbfw
