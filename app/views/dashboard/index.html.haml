@@ -58,3 +58,17 @@
       %tr
         %td.error{colspan: 1}= _("No reporters has been added.")
 = DesignBox.boxb
+
+%br/
+%br/
+
+= DesignBox.boxt _("Information about installation"), 350
+%table.form
+  %tbody
+    %tr
+      %td= _("Ruby engine")
+      %td= RUBY_ENGINE
+    %tr
+      %td= _("Ruby version")
+      %td= RUBY_VERSION
+= DesignBox.boxb
