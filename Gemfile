@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.5'
+gem 'rails', '4.0.8'
 gem 'mysql2'
 gem 'haml-rails'
 gem 'sass-rails', '~> 4.0.2'
@@ -18,7 +18,7 @@ gem 'tretry'
 # Plugin deps
 gem 'knjrbfw'
 gem 'net-ssh'
-gem 'http2'
+gem 'http2', '>= 0.0.24'
 
 # For automatic handeling of cron.
 gem 'whenever', :require => false
