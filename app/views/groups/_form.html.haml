@@ -1,9 +1,9 @@
 = DesignBox.boxt _("Details"), 500
-= simple_form_for @group do |f|
-  = f.input :name
+= simple_form_for group do |f|
+  = f.input :name, autofocus: true
   = f.submit _("Save")
-  
-  - unless @group.new_record?
-    = link_to _("Show"), group_path(@group), :class => "button"
-    = link_to _("Delete"), group_path(@group), :method => :delete, :class => "button", :data => {:confirm => _("Are you sure?")}
+
+  - unless group.new_record?
+    = link_to _("Show"), group_path(group), class: "button"
+    = link_to _("Delete"), group_path(group), method: :delete, class: "button", data: {confirm: _("Are you sure?")}
 = DesignBox.boxb

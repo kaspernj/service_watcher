@@ -5,11 +5,11 @@
       %title= header_title
     - else
       %title ServiceWatcher
-    
+
     = stylesheet_link_tag "application", media: "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
-    
+
     %center
       %table.main_table{cellpadding: 0, cellspacing: 0}
         %tr
@@ -21,10 +21,10 @@
         %tr
           %td.main_content
             %h1= header_title
-            
+
             - flash.each do |type, message|
               .flash{:class => "flash-#{type}"}= message
-            
+
             = yield
         %tr
           %td.main_bottom

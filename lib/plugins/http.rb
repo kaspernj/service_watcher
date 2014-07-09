@@ -18,19 +18,19 @@ class ServiceWatcherPlugin::Http
       "name" => "txthtmlregexmatch"
     }]
   end
-  
+
   def self.check(paras)
     raise "No arguments given." if paras.empty?
-    
+
     if paras["chessl"] == "1" || paras["chessl"] == "on"
       ssl = true
     else
       ssl = false
     end
-    
+
     Http2.new(host: paras["txthost"], port: paras["txtport"], ssl: ssl) do |http|
       response = http.get(paras["txtaddr"])
-      
+
       if paras["txthtmlregexmatch"].present?
         regex = Knj::Strings.regex(paras["txthtmlregexmatch"])
         raise _("Could not match the following regex: '%{regex}'.", regex: paras["txthtmlregexmatch"]) unless regex.match(response.body)

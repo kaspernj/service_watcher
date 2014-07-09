@@ -6,9 +6,9 @@ class Ability
       __send__("role_#{user_role.role}")
     end
   end
-  
+
 private
-  
+
   def role_administrator
     can :manage, Group
     can :manage, GroupReporter

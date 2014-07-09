@@ -25,7 +25,7 @@ module ServiceWatcher
     config.i18n.load_path += Dir[Rails.root.join('locales', '*.{rb,yml}').to_s]
     config.i18n.default_locale = :en
     config.i18n.available_locales = [:da, :en]
-    
+
     config.autoload_paths += Dir["#{config.root}/lib/"]
   end
 end

@@ -21,7 +21,7 @@ class ServiceWatcherPlugin::Ssh
       }
     ]
   end
-  
+
   def self.check(paras)
     begin
       sshrobot = Knj::SSHRobot.new(

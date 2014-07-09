@@ -12,7 +12,7 @@ class ReporterMailer < ActionMailer::Base
     
     mail subject: subject, to: email
   end
-  
+
   def report_up_again(email, service)
     @service = service
     @group = @service.group

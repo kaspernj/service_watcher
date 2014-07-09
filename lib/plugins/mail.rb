@@ -22,14 +22,14 @@ class ServiceWatcherPlugin::Mail
       "name" => "txtpass"
     }]
   end
-  
+
   def self.check(paras)
     if paras["chessl"] == "1" or paras["chessl"] == "on"
       sslval = true
     else
       sslval = false
     end
-    
+
     if paras["seltype"] == "IMAP" or paras["seltype"] == "1"
       require "net/imap"
       conn = Net::IMAP.new(paras["txthost"], paras["txtport"].to_i, sslval)
@@ -42,7 +42,7 @@ class ServiceWatcherPlugin::Mail
       require "net/smtp"
       conn = Net::SMTP.new(paras["txthost"], paras["txtport"].to_i)
       conn.enable_ssl if sslval
-      
+
       conn.start(paras["txthost"], paras["txtuser"], paras["txtpass"]) do |smtp|
         #nothing here - but it is needed to raise error if failing.
       end

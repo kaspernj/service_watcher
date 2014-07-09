@@ -5,7 +5,7 @@ class CreateServiceReporters < ActiveRecord::Migration
       t.integer :reporter_id
       t.timestamps
     end
-    
+
     add_index :service_reporters, :service_id
     add_index :service_reporters, :reporter_id
   end

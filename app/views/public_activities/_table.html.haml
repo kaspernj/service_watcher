@@ -11,10 +11,8 @@
       %tr
         %td= activity.id
         %td= activity.key
-        %td
-          - if activity.key == "service.check.unsuccessful"
-            = activity.parameters[:message]
-        %td= l(activity.created_at, :format => :long)
+        %td= activity.parameters[:message] if activity.key == "service.check.unsuccessful"
+        %td= l(activity.created_at, format: :long)
     - if resource.activities.none?
       %tr
         %td.error{colspan: 2}
@@ -22,4 +20,4 @@
 = DesignBox.boxb
 
 
-  
+

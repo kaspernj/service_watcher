@@ -1,3 +1,3 @@
 - content_for(:header_title){ _("Edit reporter: %{name}", :name => @reporter.name) }
 
-= render "form"
+= render "form", reporter: @reporter

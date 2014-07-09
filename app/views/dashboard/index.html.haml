@@ -1,7 +1,7 @@
 - content_for(:header_title){ _("Dashboard") }
 
 = DesignBox.boxt _("Actions"), 350
-= link_to _("Check all services"), dashboard_check_all_path, :class => "button", :method => :post, :data => {:confirm => _("Are you sure?")}
+= link_to _("Check all services"), dashboard_check_all_path, class: "button", method: :post, data: {confirm: _("Are you sure?")}
 = DesignBox.boxb
 
 %br/
@@ -25,7 +25,8 @@
 
 = DesignBox.boxt(Group.model_name.human(:count => 2), 350)
 .bottom_margin
-  = link_to _("Add new"), new_group_path, :class => "button"
+  = link_to _("Add new"), new_group_path, class: "button"
+
 %table.list
   %thead
     %tr
@@ -36,16 +37,15 @@
         %td= link_to_group group
     - if Group.all.none?
       %tr
-        %td.error{colspan: 1}
-          = _("No groups was found.")
+        %td.error{colspan: 1}= _("No groups was found.")
 = DesignBox.boxb
 
 %br/
 %br/
 
-= DesignBox.boxt(Reporter.model_name.human(:count => 2), 350)
+= DesignBox.boxt(Reporter.model_name.human(count: 2), 350)
 .bottom_margin
-  = link_to _("Add new"), new_reporter_path, :class => "button"
+  = link_to _("Add new"), new_reporter_path, class: "button"
 %table.list
   %thead
     %tr
@@ -56,6 +56,5 @@
         %td= link_to_reporter reporter
     - if Reporter.all.none?
       %tr
-        %td.error{colspan: 1}
-          = _("No reporters has been added.")
+        %td.error{colspan: 1}= _("No reporters has been added.")
 = DesignBox.boxb

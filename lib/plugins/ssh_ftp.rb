@@ -29,10 +29,10 @@ class ServiceWatcherPlugin::SshFtp
       "type" => "password"
     }]
   end
-  
+
   def self.check(paras)
     require "knj/strings"
-    
+
     sshrobot = Knj::SSHRobot.new(
       "host" => paras["txtsshhost"],
       "port" => paras["txtsshport"].to_i,
@@ -40,14 +40,14 @@ class ServiceWatcherPlugin::SshFtp
       "passwd" => paras["txtsshpasswd"]
     )
     sshrobot.session
-    
+
     if !sshrobot.fileExists("/usr/bin/lftp")
       raise "lftp is not installed on server."
     end
-    
+
     output = sshrobot.exec("/usr/bin/lftp #{Knj::Strings.unixsafe(paras["txtftphost"])} -p #{Knj::Strings.unixsafe(paras["txtftpport"])} -u #{Knj::Strings.unixsafe(paras["txtftpuser"])},#{Knj::Strings.unixsafe(paras["txtftppasswd"])} -d -e \"ls;quit\"")
     sshrobot.close
-    
+
     if !output.index("<--- 226 Transfer")
       raise output
     end

@@ -61,7 +61,7 @@ namespace :deploy do
         with rails_env: fetch(:rails_env) do
           puts "Updating plugins."
           execute :rake, 'update_plugins'
-          
+
           puts "Updating reporter plugins."
           execute :rake, 'update_reporter_plugins'
         end
