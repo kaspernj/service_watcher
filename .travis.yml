@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - ruby-1.9.3-p484
+  - 2.0.0-p247
 
 notifications:
   email: false
