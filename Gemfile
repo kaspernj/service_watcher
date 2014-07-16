@@ -14,6 +14,7 @@ gem 'simple_form'
 gem 'string-cases'
 gem 'public_activity'
 gem 'tretry'
+gem 'will_paginate'
 
 # Plugin deps
 gem 'knjrbfw'
