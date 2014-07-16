@@ -2,6 +2,13 @@ class ServicesController < ApplicationController
   before_filter :set_group
   before_filter :set_and_authorize
 
+  def index
+  end
+
+  def show
+    @activities = @service.activities.paginate(page: params[:page]).order(:id).reverse_order
+  end
+
   def new
     @service = @group.services.new
   end
