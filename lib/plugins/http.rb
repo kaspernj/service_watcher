@@ -33,7 +33,11 @@ class ServiceWatcherPlugin::Http
 
       if paras["txthtmlregexmatch"].present?
         regex = Knj::Strings.regex(paras["txthtmlregexmatch"])
-        raise _("Could not match the following regex: '%{regex}'.", regex: paras["txthtmlregexmatch"]) unless regex.match(response.body)
+
+        unless regex.match(response.body)
+          $stderr.puts "HTML was: #{response.body}"
+          raise _("Could not match the following regex: '%{regex}'.", regex: paras["txthtmlregexmatch"])
+        end
       end
     end
   end
