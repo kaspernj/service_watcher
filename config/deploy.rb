@@ -34,6 +34,8 @@ set :linked_files, ["config/database.yml", "config/smtp.yml"]
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
+set :rvm_ruby_version, '2.0.0-p481'
+
 # Whenever config used to update cron to run checks.
 set :whenever_roles,        ->{ :db }
 set :whenever_command,      ->{ [:bundle, :exec, :whenever] }
@@ -56,7 +58,7 @@ namespace :deploy do
   after :publishing, :restart
 
   after :restart, :clear_cache do
-    on roles(:web), in: :groups, limit: 3, wait: 10 do
+    on roles(:web), in: :groups, limit: 3 do
       within release_path do
         with rails_env: fetch(:rails_env) do
           puts "Updating plugins."

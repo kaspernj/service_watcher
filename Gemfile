@@ -40,6 +40,7 @@ group :development, :test do
   gem 'capistrano'
   gem 'capistrano-rails'
   gem 'capistrano-bundler'
+  gem 'capistrano-rvm'
 end
 
 gem "codeclimate-test-reporter", group: :test, require: nil
