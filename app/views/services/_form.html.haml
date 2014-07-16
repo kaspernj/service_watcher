@@ -11,7 +11,7 @@
       - service.parameters.each do |parameter|
         - if parameter["opts"]
           = f.input parameter["name"], label: parameter["title"], required: false, collection: parameter["opts"], selected: parameter["value"]
-        - if parameter["type"] == "password"
+        - elsif parameter["type"] == "password"
           = f.input parameter["name"], as: :password, label: parameter["title"], required: false, input_html: {value: parameter["value"]}
         - else
           = f.input parameter["name"], label: parameter["title"], required: false, input_html: {value: parameter["value"]}
