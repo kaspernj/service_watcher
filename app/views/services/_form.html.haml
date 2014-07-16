@@ -9,7 +9,12 @@
     %h2= _("Plugin parameters")
     = simple_fields_for :parameters do |f|
       - service.parameters.each do |parameter|
-        = f.input parameter["name"], label: parameter["title"], required: false, input_html: {value: parameter["value"]}
+        - if parameter["opts"]
+          = f.input parameter["name"], label: parameter["title"], required: false, collection: parameter["opts"], selected: parameter["value"]
+        - if parameter["type"] == "password"
+          = f.input parameter["name"], as: :password, label: parameter["title"], required: false, input_html: {value: parameter["value"]}
+        - else
+          = f.input parameter["name"], label: parameter["title"], required: false, input_html: {value: parameter["value"]}
 
   = f.submit _("Save")
 

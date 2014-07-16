@@ -6,6 +6,7 @@ class Plugin < ActiveRecord::Base
   end
 
   def plugin_class
+    ServiceWatcherPlugin.load_sub_constant(name)
     ServiceWatcherPlugin.const_get(name)
   end
 end
