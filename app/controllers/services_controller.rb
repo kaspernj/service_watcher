@@ -1,6 +1,6 @@
 class ServicesController < ApplicationController
   before_filter :set_group
-  before_filter :set_and_authorize
+  load_and_authorize_resource
 
   def index
   end

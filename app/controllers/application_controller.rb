@@ -7,20 +7,6 @@ class ApplicationController < ActionController::Base
 
 private
 
-  def set_and_authorize
-    clazz_name = StringCases.snake_to_camel(controller_name).singularize
-    clazz = Kernel.const_get(clazz_name)
-    instance_name = StringCases.camel_to_snake(clazz_name)
-
-    if params[:id].to_i > 0
-      instance = clazz.find(params[:id])
-      instance_variable_set("@#{instance_name}", instance)
-      authorize! action_name.to_sym, instance
-    else
-      authorize! action_name.to_sym, clazz
-    end
-  end
-
   def set_locale
     if signed_in? && current_user.locale.present?
       I18n.locale = current_user.locale

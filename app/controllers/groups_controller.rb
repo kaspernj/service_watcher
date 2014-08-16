@@ -1,5 +1,5 @@
 class GroupsController < ApplicationController
-  before_filter :set_and_authorize
+  load_and_authorize_resource
 
   def new
     @group = Group.new
