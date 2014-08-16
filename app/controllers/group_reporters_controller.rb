@@ -1,9 +1,10 @@
 class GroupReportersController < ApplicationController
   before_filter :set_group
-  before_filter :set_and_authorize
+  load_and_authorize_resource
 
   def new
-    @group_reporter = @group.group_reporters.new(group_reporter_params)
+    @group_reporter = @group.group_reporters.new
+    @group_reporter.assign_parameters(group_reporter_params) if params[:group_reporter]
   end
 
   def create
