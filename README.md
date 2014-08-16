@@ -1,7 +1,8 @@
 # README
 
-[![Code Climate](https://codeclimate.com/github/kaspernj/service_watcher.png)](https://codeclimate.com/github/kaspernj/service_watcher)
 [![Build Status](https://travis-ci.org/kaspernj/service_watcher.svg?branch=master)](https://travis-ci.org/kaspernj/service_watcher)
+[![Code Climate](https://codeclimate.com/github/kaspernj/service_watcher.png)](https://codeclimate.com/github/kaspernj/service_watcher)
+[![Code Climate](https://codeclimate.com/github/kaspernj/service_watcher/badges/gpa.svg)](https://codeclimate.com/github/kaspernj/service_watcher)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
