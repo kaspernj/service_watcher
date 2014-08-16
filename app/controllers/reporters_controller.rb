@@ -41,6 +41,10 @@ class ReportersController < ApplicationController
     end
   end
 
+  def show
+    @activities = @reporter.activities.paginate(page: params[:p])
+  end
+
 private
 
   def reporter_params
